@@ -13,6 +13,7 @@ html {
   --c-gold: rgba(233, 233, 89, 1);
   --pad-side: max(21px, 3vmin);
   --pad-horizontal: max(34px, 3vmin);
+  --pad-inner: max(1px, 1vmin);
 }
 a {
   color: var(--c-white);
@@ -92,8 +93,8 @@ body {
 }
 .siteHeader_title {
   margin: -0.1em 0 0 -0.04em;
-  font-weight: 200;
-  font-size: 40px;
+  font-weight: 89;
+  font-size: 55px;
 }
 span.c1 {
   color: var(--c-white);
@@ -103,7 +104,7 @@ span.c2 {
 }
 .siteHeader_label {
   margin-top: 5px;
-  font-weight: 400;
+  font-weight: 89;
 }
 .siteHeader_nav {
   margin-top: 50px;
@@ -111,7 +112,7 @@ span.c2 {
 .siteHeader_nav ol {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 13px;
 }
 .siteHeader_nav ol li {
   position: relative;
@@ -120,18 +121,18 @@ span.c2 {
   position: absolute;
   left: 0;
   top: 2px;
-  font-size: 10px;
+  font-size: 13px;
   opacity: 0;
   pointer-events: none;
   transition-property: opacity;
-  transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.5, 0.2, 1);
 }
 .siteHeader_nav ol li ._text {
   position: relative;
   transition-property: opacity;
-  transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.5, 0.2, 1);
 }
 .siteHeader_nav ol li ._text::before {
   content: "";
@@ -160,7 +161,7 @@ span.c2 {
   opacity: 0;
 }
 
-.content_frame_one {
+/* .home_content_frame_one {
   position: absolute;
   right: calc(var(--pad-side) + 21px);
   bottom: calc(var(--pad-horizontal) + 17px);
@@ -168,8 +169,8 @@ span.c2 {
   width: 514px;
   border: 1px solid var(--c-white);
   color: var(--c-white);
-}
-.content_frame_two {
+} */
+.home_content_frame_two {
   position: absolute;
   right: calc(var(--pad-side) + 21px);
   bottom: calc(var(--pad-horizontal) + 13px);
@@ -178,17 +179,16 @@ span.c2 {
   border: 1px solid var(--c-white);
   color: var(--c-white);
 }
-.home {
+.home_content {
+  margin: auto;
+  width: 100%;
+  padding: 7px;
+  line-height: 1.5;
   position: absolute;
-  right: calc(var(--pad-side) + 37px);
-  bottom: calc(var(--pad-horizontal) + 31px);
   white-space: nowrap;
   color: var(--c-white);
 }
-.home_aboutme {
-  line-height: 1.5;
-}
-.home_aboutme span {
+.home_content span {
   display: block;
 }
 
@@ -229,18 +229,18 @@ span.c2 {
   position: absolute;
   left: 0;
   top: 2px;
-  font-size: 10px;
+  font-size: 13px;
   opacity: 0;
   pointer-events: none;
   transition-property: opacity;
-  transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.5, 0.2, 1);
 }
 .get_in_touch_list ol li ._text {
   position: relative;
   transition-property: opacity;
-  transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 0.5, 0.2, 1);
 }
 .get_in_touch_list ol li ._text::before {
   content: "";
@@ -287,16 +287,47 @@ span.c2 {
   border: 1px solid var(--c-white);
   color: var(--c-white);
 }
-.resume {
+.resume_content {
+  line-height: 1.5;
   position: absolute;
   right: calc(var(--pad-side) + 37px);
   bottom: calc(var(--pad-horizontal) + 31px);
   white-space: nowrap;
   color: var(--c-white);
 }
-.resume_text {
+.resume span {
+  display: block;
+}
+
+
+.projects_frame_one {
+  position: absolute;
+  right: calc(var(--pad-side) + 21px);
+  bottom: calc(var(--pad-horizontal) + 17px);
+  height: calc(var(--pad-side) + 293.5px);
+  width: 514px;
+  border: 1px solid var(--c-white);
+  color: var(--c-white);
+}
+.projects_frame_two {
+  position: absolute;
+  right: calc(var(--pad-side) + 21px);
+  bottom: calc(var(--pad-horizontal) + 13px);
+  height: calc(var(--pad-side) + 293.5px);
+  width: 514px;
+  border: 1px solid var(--c-white);
+  color: var(--c-white);
+}
+.projects {
+  position: absolute;
+  right: calc(var(--pad-side) + 37px);
+  bottom: calc(var(--pad-horizontal) + 31px);
+  white-space: nowrap;
+  color: var(--c-white);
+}
+.projects_content {
   line-height: 1.5;
 }
-.resume span {
+.projects span {
   display: block;
 }
