@@ -8,9 +8,9 @@ function floatySpace() {
 
   // Elements
   let pts = [];
-  let center = space.size.$divide(1.8);
-  let angle = -window.innerWidth;
-  let count = window.innerWidth * 5;
+  let center = space.size.$divide(13);
+  let angle = (window.innerWidth / 2584);
+  let count = window.innerWidth / 8;
   if (count > 144) count = 144;
   let line = new Line(0, angle).to(space.size.x, 0);
   let mouse = center.clone();
@@ -43,10 +43,6 @@ function floatySpace() {
         let ln = new Line(pt).to(line.getPerpendicularFromPoint(pt));
 
         // opacity of line derived from distance to the line
-        let opacity = Math.min(
-          0.8,
-          1 - Math.abs(line.getDistanceFromPoint(pt)) / r
-        );
         let distFromMouse = Math.abs(ln.getDistanceFromPoint(mouse));
 
         if (distFromMouse < 55) {
