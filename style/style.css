@@ -2,6 +2,16 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: "Plus Jakarta Sans-light";
+  src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans-light-italc";
+  src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-LightItalic.ttf");
+  font-weight: 300;
+}
 html {
   line-height: 1;
 }
@@ -28,6 +38,7 @@ ul {
   top: 0;
   width: 100%;
   height: 100%;
+  font-family: "Plus Jakarta Sans-light", sans-serif;
 }
 .canvas {
   position: absolute;
@@ -52,7 +63,7 @@ ul {
   top: calc(var(--pad-side) + 37px);
 }
 .site_header_title {
-  font-weight: 89;
+  font-weight: 600;
   font-size: 55px;
 }
 span.c1 {
@@ -81,8 +92,8 @@ span.c2 {
 }
 .site_header_nav ol li ._dot {
   position: absolute;
-  top: 2px;
-  font-size: 13px;
+  top: 5px;
+  font-size: 8px;
   color: var(--c-gold);
   opacity: 0;
   pointer-events: none;
@@ -117,6 +128,7 @@ span.c2 {
   bottom: var(--pad-horizontal);
   margin-bottom: 13px;
   border: 1px solid var(--c-white);
+  font-size: 16px;
 }
 .frame_home {
   height: 322px;
