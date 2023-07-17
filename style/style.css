@@ -62,6 +62,9 @@ body {
   border: 1px solid var(--c-white);
   overflow: auto;
   pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media (min-width: 426px) {
   .frame {
@@ -72,16 +75,12 @@ body {
   }
 }
 
-
-
-
-
 .site_header {
   position: relative;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-left: 13px;
-  margin-right: 13px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 8px;
+  margin-right: 8px;
   pointer-events: none;
 }
 .site_header_title {
@@ -170,8 +169,8 @@ span.c2 {
   .site_header_label {
     margin-top: 13px;
   }
-    .site_header_nav {
-  margin-top: 34px;
+  .site_header_nav {
+    margin-top: 34px;
   }
 }
 @media (min-width: 1441px) {
@@ -180,15 +179,12 @@ span.c2 {
   }
 }
 
-
-
-
 .site_content {
   position: relative;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-left: 13px;
-  margin-right: 13px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 8px;
+  margin-right: 8px;
   border: 1px solid var(--c-white);
 }
 .content_frame {
@@ -260,15 +256,12 @@ span.c2 {
   }
 }
 
-
-
-
 .site_footer {
   position: relative;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-left: 13px;
-  margin-right: 13px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 8px;
+  margin-right: 8px;
   pointer-events: none;
 }
 .get_in_touch_text {
@@ -337,10 +330,10 @@ span.c2 {
 }
 @media (min-width: 1024px) {
   .site_footer {
-  position: absolute;
-  left: 21px;
-  bottom: 13px;
-  margin: 0px;
-  pointer-events: none;
-}
+    position: absolute;
+    left: 21px;
+    bottom: 13px;
+    margin: 0px;
+    pointer-events: none;
+  }
 }
