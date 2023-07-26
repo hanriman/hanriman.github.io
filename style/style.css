@@ -241,6 +241,7 @@ span.c2 {
     position: absolute;
     top: 3px;
     bottom: 3px;
+    overflow: hidden;
   }
   .content {
     margin-top: 21px;
@@ -311,6 +312,9 @@ span.c2 {
     margin-left: 21px;
     margin-right: 21px;
     margin-bottom: 13px;
+  }
+  .get_in_touch_text {
+    font-size: 21px;
   }
   .get_in_touch_frame {
     width: 311px;
