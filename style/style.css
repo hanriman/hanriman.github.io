@@ -4,18 +4,10 @@
 }
 @font-face {
   font-family: "Plus Jakarta Sans";
-  font-family: "Plus Jakarta Sans";
   src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
   font-weight: 300;
 }
 @font-face {
-  font-family: "Plus Jakarta Sans-bold";
-  src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Plus Jakarta Sans-italic";
-  src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf");
   font-family: "Plus Jakarta Sans-bold";
   src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
   font-weight: 600;
@@ -45,7 +37,7 @@ ul {
 }
 body {
   background: var(--c-bg);
-  overflow: scroll;
+  overflow: hidden;
   position: fixed;
   left: 0;
   top: 0;
