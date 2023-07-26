@@ -115,7 +115,7 @@ span.c2 {
 }
 .site_header_nav ol li ._dot {
   position: absolute;
-  top: 2px;
+  top: 5px;
   font-size: 5px;
   color: var(--c-gold);
   opacity: 0;
@@ -241,7 +241,7 @@ span.c2 {
     position: absolute;
     top: 3px;
     bottom: 3px;
-    overflow: hidden;
+    overflow: scroll;
   }
   .content {
     margin-top: 21px;
