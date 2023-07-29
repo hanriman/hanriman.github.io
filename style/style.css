@@ -74,6 +74,35 @@ body {
     bottom: var(--pad-vertical);
   }
 }
+.theme {
+  position: fixed;
+  z-index: 10;
+  left: calc(var(--pad) - 0.15em);
+  bottom: var(--pad);
+  transform-origin: left bottom;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  mix-blend-mode: difference;
+  display: flex;
+  column-gap: 15px;
+  cursor: pointer;
+}
+.theme_color {
+  display: flex;
+  column-gap: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.theme_color ._box::before {
+  content: "□";
+}
+.theme_color.is-selected ._box::before {
+  content: "■";
+}
+
+
+
 
 .site_header {
   position: relative;

@@ -63,8 +63,8 @@
               <br />
               <br />
               In my free time you'll find me grinding my programming skills at
-              Leetcode, create videos on Youtube or write some blogs article to add
-              some internet footprint in this vast and crowded world.
+              Leetcode, create videos on Youtube or write some blogs article to
+              add some internet footprint in this vast and crowded world.
               <br />
               <br />
               Check out my Resume for more details.
@@ -190,7 +190,26 @@
         </div>
       </footer>
     </div>
+
+    <div class="theme" id="Theme" x-data="" @click="$store.ui.toggleTheme()">
+      <div
+        class="theme_color"
+        :class="{ &#39;is-selected&#39;: $store.ui.theme === &#39;light&#39; }"
+      >
+        <div class="_box"></div>
+        <div class="_text">Light</div>
+      </div>
+      <div
+        class="theme_color is-selected"
+        :class="{ &#39;is-selected&#39;: $store.ui.theme === &#39;dark&#39; }"
+      >
+        <div class="_box"></div>
+        <div class="_text">Dark</div>
+      </div>
+    </div>
+
+
   </body>
 </html>
 
-<script src="scripts/canvas.js"></script>
+<!-- <script src="scripts/canvas.js"></script> -->
