@@ -187,25 +187,13 @@
       </footer>
     </div>
 
-    <div class="theme" id="Theme" x-data="" @click="$store.ui.toggleTheme()">
-      <div
-        class="theme_color"
-        :class="{ &#39;is-selected&#39;: $store.ui.theme === &#39;light&#39; }"
-      >
-        <div class="_box"></div>
-        <div class="_text">Light</div>
-      </div>
-      <div
-        class="theme_color is-selected"
-        :class="{ &#39;is-selected&#39;: $store.ui.theme === &#39;dark&#39; }"
-      >
-        <div class="_box"></div>
-        <div class="_text">Dark</div>
-      </div>
-    </div>
+    <div class="toggle fa fa-moon-o"></div>
 
+    <!-- dark or light theme script -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
 
   </body>
 </html>
 
-<!-- <script src="scripts/canvas.js"></script> -->
+<script src="scripts/canvas.js"></script>

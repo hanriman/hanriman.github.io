@@ -1,7 +1,7 @@
 let space;
 
 function floatySpace() {
-  let colors = ["#FF3F8E", "#04C2C9", "#2E55C1"];
+  let colors = ["rgba(233, 233, 89, 1)", "rgba(255, 1, 144, 1)", "rgba(89, 89, 255, 1)"];
 
   space = new CanvasSpace("canvas").display();
   let form = new Form(space);
@@ -51,7 +51,7 @@ function floatySpace() {
           if (pts[i].brightness > 0.1) pts[i].brightness -= 0.01;
         }
 
-        let color = "rgba(255,255,255," + pts[i].brightness + ")";
+        let color = "rgba(2, 8, 34," + pts[i].brightness + ")";
         form.stroke(color).fill(true).line(ln);
       }
     },

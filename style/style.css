@@ -1,3 +1,5 @@
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+
 * {
   margin: 0;
   padding: 0;
@@ -21,9 +23,10 @@ html {
   line-height: 1;
 }
 :root {
-  --c-bg: rgba(2, 8, 34, 1);
+  --c-blue: rgba(2, 8, 34, 1);
   --c-white: rgba(233, 233, 233, 1);
   --c-gold: rgba(233, 233, 89, 1);
+  --c-black: rgba(1, 1, 1, 1);
   --pad-side: max(21px, 3vmin);
   --pad-vertical: max(34px, 3vmin);
 }
@@ -36,7 +39,8 @@ ul {
   list-style: none;
 }
 body {
-  background: var(--c-bg);
+  background: var(--c-blue);
+  color: var(--c-white);
   overflow: hidden;
   position: fixed;
   left: 0;
@@ -45,6 +49,9 @@ body {
   height: 100%;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 13px;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .canvas {
   position: absolute;
@@ -55,8 +62,8 @@ body {
 }
 .frame {
   position: absolute;
-  left: 8px;
-  right: 8px;
+  left: 16px;
+  right: 16px;
   top: 13px;
   bottom: 13px;
   border: 1px solid var(--c-white);
@@ -74,32 +81,6 @@ body {
     bottom: var(--pad-vertical);
   }
 }
-.theme {
-  position: fixed;
-  z-index: 10;
-  left: calc(var(--pad) - 0.15em);
-  bottom: var(--pad);
-  transform-origin: left bottom;
-  transform: rotate(-90deg);
-  white-space: nowrap;
-  mix-blend-mode: difference;
-  display: flex;
-  column-gap: 15px;
-  cursor: pointer;
-}
-.theme_color {
-  display: flex;
-  column-gap: 3px;
-  font-weight: 400;
-  text-transform: uppercase;
-  pointer-events: none;
-}
-.theme_color ._box::before {
-  content: "□";
-}
-.theme_color.is-selected ._box::before {
-  content: "■";
-}
 
 
 
@@ -115,15 +96,14 @@ body {
 .site_header_title {
   font-size: 27px;
 }
-span.c1 {
-  color: var(--c-white);
-}
 span.c2 {
   color: var(--c-gold);
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .site_header_label {
   margin-top: 5px;
-  color: var(--c-white);
   pointer-events: auto;
 }
 .site_header_nav {
@@ -148,11 +128,15 @@ span.c2 {
   font-size: 5px;
   color: var(--c-gold);
   opacity: 0;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .site_header_nav ol li ._text {
   transition-property: opacity;
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.5, 0.2, 1);
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .site_header_nav ol li ._text::before {
   content: "";
@@ -232,7 +216,6 @@ span.c2 {
   margin-left: 8px;
   margin-right: 8px;
   line-height: 1.3;
-  color: var(--c-white);
 }
 @media (min-width: 426px) {
   .site_content {
@@ -295,7 +278,6 @@ span.c2 {
   pointer-events: none;
 }
 .get_in_touch_text {
-  color: var(--c-white);
   margin-bottom: 5px;
 }
 .get_in_touch_frame {
@@ -305,7 +287,6 @@ span.c2 {
   position: relative;
   margin: 8px;
   white-space: nowarap;
-  color: var(--c-white);
   pointer-events: auto;
 }
 .get_in_touch_nav ol {
@@ -320,8 +301,9 @@ span.c2 {
 }
 .get_in_touch_nav ol li ._text {
   transition-property: opacity;
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.5, 0.2, 1);
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
 }
 .get_in_touch_nav ol li ._text::before {
   content: "";
@@ -369,4 +351,59 @@ span.c2 {
     margin: 0px;
     pointer-events: none;
   }
+}
+
+
+
+
+
+.toggle{
+  background-color: var(--c-white);
+  padding: 2px;
+  color: var(--c-blue);
+  cursor: pointer;
+  transform: rotate(-90deg);
+  
+  position: absolute;
+  left: 0px;
+  top: 46%;
+}
+
+.light{
+  background-color: var(--c-white);
+  color: var(--c-blue);
+}
+.light .toggle {
+  background-color: var(--c-blue);
+  color: var(--c-white)
+}
+.light a {
+  color: var(--c-blue);
+  text-decoration: none;
+}
+.light .frame{
+  border: 1px solid var(--c-blue);
+}
+.light .frame_home{
+  border: 1px solid var(--c-blue);
+}
+.light .frame_projects{
+  border: 1px solid var(--c-blue);
+}
+.light .frame_resume{
+  border: 1px solid var(--c-blue);
+}
+.light .content_frame{
+  border: 1px solid var(--c-blue);
+}
+.light .get_in_touch_frame{
+  border: 1px solid var(--c-blue);
+}
+
+.light span.c2 {
+  color: var(--c-black);
+}
+
+.light .site_header_nav ol li ._dot {
+  color: var(--c-black);
 }
