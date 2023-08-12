@@ -366,7 +366,14 @@ span.c2 {
   
   position: absolute;
   left: 0px;
-  top: 46%;
+  top: 55%;
+  margin-top: -55px;
+
+  height: 13px;
+  width: 13px;
+}
+.fa-moon-o:before{
+  padding: 1px;
 }
 
 .light{
@@ -375,7 +382,7 @@ span.c2 {
 }
 .light .toggle {
   background-color: var(--c-blue);
-  color: var(--c-white)
+  color: var(--c-gold)
 }
 .light a {
   color: var(--c-blue);
