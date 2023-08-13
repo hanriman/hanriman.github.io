@@ -92,6 +92,7 @@ body {
 }
 .header-title {
   font-size: 27px;
+  font-weight: 233;
 }
 span.c2 {
   color: var(--c-gold);
@@ -167,9 +168,6 @@ span.c2 {
   .header {
     font-size: 16px;
   }
-  .header-title {
-    font-size: 34px;
-  }
   .header-nav ol {
     row-gap: 13px;
   }
@@ -180,11 +178,6 @@ span.c2 {
   }
   .header-nav {
     margin-top: 34px;
-  }
-}
-@media (min-width: 1441px) {
-  .header-title {
-    font-size: 55px;
   }
 }
 
