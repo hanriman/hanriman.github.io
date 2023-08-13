@@ -104,7 +104,6 @@ span.c2 {
 }
 .site_header_label {
   margin-top: 5px;
-  pointer-events: auto;
 }
 .site_header_nav {
   margin-top: 13px;
@@ -204,9 +203,9 @@ span.c2 {
   position: relative;
   margin-top: 3px;
   margin-bottom: 3px;
-  left: -1px;
   width: 100%;
   border: 1px solid var(--c-white);
+  box-sizing: border-box;
   overflow: scroll;
 }
 .content {
