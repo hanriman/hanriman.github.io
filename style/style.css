@@ -7,17 +7,17 @@
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
-  font-weight: 300;
+  font-weight: 377;
 }
 @font-face {
   font-family: "Plus Jakarta Sans-bold";
   src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
-  font-weight: 600;
+  font-weight: 610;
 }
 @font-face {
   font-family: "Plus Jakarta Sans-italic";
   src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf");
-  font-weight: 300;
+  font-weight: 377;
 }
 html {
   line-height: 1;
@@ -202,7 +202,7 @@ span.c2 {
   margin-bottom: 3px;
   width: 100%;
   border-top: 1px solid var(--c-white);
-  border-bottom: 1px solid var(--c-white); 
+  border-bottom: 1px solid var(--c-white);
   overflow: scroll;
 }
 .content {
@@ -271,10 +271,10 @@ span.c2 {
   margin-bottom: 13px;
   margin-left: 8px;
   margin-right: 8px;
-  pointer-events: none;
 }
 .get-in-touch-text {
   margin-bottom: 5px;
+  pointer-events: auto;
 }
 .get-in-touch-frame {
   border: 1px solid var(--c-white);
@@ -322,6 +322,9 @@ span.c2 {
   }
   .get-in-touch-text {
     font-size: 21px;
+  }
+  span.c4 {
+    font-size: 16px;
   }
   .get-in-touch-frame {
     width: 311px;
@@ -405,4 +408,3 @@ span.c2 {
 .light .get-in-touch-frame {
   border: 1px solid var(--c-blue);
 }
-
