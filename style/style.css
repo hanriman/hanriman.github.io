@@ -34,6 +34,9 @@ html {
 a {
   color: var(--c-white);
   text-decoration: none;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
 }
 ol,
 ul {
@@ -381,7 +384,6 @@ span.bold {
 }
 .light a {
   color: var(--c-blue);
-  text-decoration: none;
 }
 .light span.c2 {
   color: var(--c-black);
