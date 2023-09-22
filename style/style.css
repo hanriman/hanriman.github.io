@@ -137,10 +137,10 @@ span.c2 {
   transition: all 0.8s;
 }
 .header-nav ol li ._text {
+  transition: all 0.8s;
   transition-property: opacity;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
-  transition: all 0.8s;
 }
 .header-nav ol li ._text::before {
   content: "";
@@ -299,10 +299,10 @@ span.bold {
   transition-timing-function: cubic-bezier(0.1, 0.5, 0.2, 1);
 }
 .get-in-touch-nav ol li ._text {
+  transition: all 0.8s;
   transition-property: opacity;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
-  transition: all 0.8s;
 }
 .get-in-touch-nav ol li ._text::before {
   content: "";
@@ -355,20 +355,43 @@ span.bold {
   }
 }
 
+.toggle ._theme-1::before {
+  content: "L";
+  text-align: center;
+}
+.toggle ._theme-2::before {
+  content: "I";
+  text-align: center;
+}
+.toggle ._theme-3::before {
+  content: "G";
+}
+.toggle ._theme-4::before {
+  content: "H";
+}
+.toggle ._theme-5::before {
+  content: "T";
+}
+/* .toggle ol li .is-selected ._dark {
+  opacity: 0;
+}
+.toggle ol li .is-selected ._light {
+  opacity: 1;
+} */
+
 .toggle {
   background-color: var(--c-white);
   padding: 2px;
   color: var(--c-blue);
   cursor: pointer;
-  transform: rotate(-90deg);
+  transform: rotate(-90);
 
   position: absolute;
   left: 0px;
   top: 55%;
   margin-top: -55px;
 
-  height: 13px;
-  width: 13px;
+  text-align: center;
 }
 .fa-moon-o:before {
   padding: 1px;
@@ -382,8 +405,26 @@ span.bold {
   background-color: var(--c-blue);
   color: var(--c-gold);
 }
+.light .toggle ._theme-1::before {
+  content: "D";
+}
+.light .toggle ._theme-2::before {
+  content: "A";
+}
+.light .toggle ._theme-3::before {
+  content: "R";
+}
+.light .toggle ._theme-4::before {
+  content: "K";
+}
+.light .toggle ._theme-5::before {
+  content: "\00a0";
+}
 .light a {
   color: var(--c-blue);
+}
+.light ._light {
+  color: var(--c-gold);
 }
 .light span.c2 {
   color: var(--c-black);
