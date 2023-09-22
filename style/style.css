@@ -355,9 +355,21 @@ span.bold {
   }
 }
 
+.toggle {
+  background-color: var(--c-white);
+  padding: 2px;
+  color: var(--c-blue);
+  cursor: pointer;
+
+  position: absolute;
+  left: 0px;
+  top: 55%;
+  margin-top: -55px;
+
+  text-align: center;
+}
 .toggle ._theme-1::before {
   content: "L";
-  text-align: center;
 }
 .toggle ._theme-2::before {
   content: "I";
@@ -371,27 +383,6 @@ span.bold {
 }
 .toggle ._theme-5::before {
   content: "T";
-}
-/* .toggle ol li .is-selected ._dark {
-  opacity: 0;
-}
-.toggle ol li .is-selected ._light {
-  opacity: 1;
-} */
-
-.toggle {
-  background-color: var(--c-white);
-  padding: 2px;
-  color: var(--c-blue);
-  cursor: pointer;
-  transform: rotate(-90);
-
-  position: absolute;
-  left: 0px;
-  top: 55%;
-  margin-top: -55px;
-
-  text-align: center;
 }
 .fa-moon-o:before {
   padding: 1px;
@@ -418,7 +409,7 @@ span.bold {
   content: "K";
 }
 .light .toggle ._theme-5::before {
-  content: "\00a0";
+  content: "S";
 }
 .light a {
   color: var(--c-blue);
