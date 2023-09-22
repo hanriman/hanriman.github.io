@@ -106,6 +106,7 @@ span.c2 {
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   transition: all 0.8s;
+  text-shadow: var(--c-gold) 1px 0 21px;
 }
 .header-label {
   margin-top: 5px;
@@ -156,6 +157,7 @@ span.c2 {
 }
 .header-nav ol li.is-selected ._dot {
   opacity: 1;
+  text-shadow: var(--c-gold) 1px 0 5px;
 }
 .header-nav ol li.is-selected ._text {
   opacity: 0;
@@ -422,12 +424,14 @@ span.bold {
 }
 .light span.c2 {
   color: var(--c-black);
+  text-shadow: var(--c-black) 1px 0 21px;
 }
 .light .site-frame {
   border: 1px solid var(--c-blue);
 }
 .light .header-nav ol li ._dot {
   color: var(--c-black);
+  text-shadow: var(--c-black) 1px 0 5px;
 }
 .light .content-frame {
   border-top: 1px solid var(--c-blue);
