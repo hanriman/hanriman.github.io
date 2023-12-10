@@ -389,6 +389,27 @@ span.bold {
 .toggle ._theme-5::before {
   content: "T";
 }
+.toggle ._theme-6::before {
+  content: "\00a0";
+}
+.toggle ._theme-7::before {
+  content: "T";
+}
+.toggle ._theme-8::before {
+  content: "H";
+}
+.toggle ._theme-9::before {
+  content: "E";
+}
+.toggle ._theme-10::before {
+  content: "M";
+}
+.toggle ._theme-11::before {
+  content: "E";
+}
+
+
+
 .fa-moon-o:before {
   padding: 1px;
 }
@@ -415,6 +436,24 @@ span.bold {
 }
 .light .toggle ._theme-5::before {
   content: "S";
+}
+.light .toggle ._theme-6::before {
+  content: "\00a0";
+}
+.light .toggle ._theme-7::before {
+  content: "T";
+}
+.light .toggle ._theme-8::before {
+  content: "H";
+}
+.light .toggle ._theme-9::before {
+  content: "E";
+}
+.light .toggle ._theme-10::before {
+  content: "M";
+}
+.light .toggle ._theme-11::before {
+  content: "E";
 }
 .light a {
   color: var(--c-blue);
