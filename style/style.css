@@ -60,6 +60,9 @@ body {
   -moz-transition: all 0.8s;
   transition: all 0.8s;
 }
+.content-frame::-webkit-scrollbar {
+  display: none;
+}
 .canvas {
   position: absolute;
   top: 0;
@@ -405,7 +408,6 @@ span.bold {
   content: "E";
 }
 
-
 .fa-moon-o:before {
   padding: 1px;
 }
@@ -443,7 +445,7 @@ span.bold {
   content: "O";
 }
 .light .toggle ._theme-9::before {
-  content: "D"
+  content: "D";
 }
 .light .toggle ._theme-10::before {
   content: "E";
