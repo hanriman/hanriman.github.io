@@ -27,8 +27,8 @@ html {
   --c-white: rgba(233, 233, 233, 1);
   --c-gold: rgba(233, 233, 89, 1);
   --c-black: rgba(1, 1, 1, 1);
-  --pad-side: max(21px, 3vmin);
-  --pad-vertical: max(34px, 3vmin);
+  --pad-side: max(21px);
+  --pad-vertical: max(34px);
 }
 
 a {
@@ -372,6 +372,11 @@ span.bold {
   margin-top: -55px;
 
   text-align: center;
+}
+@media (min-width: 426px) {
+  .toggle {
+    padding: 4px;
+  }
 }
 .toggle-text {
   font-family: "Plus Jakarta Sans", sans-serif;
