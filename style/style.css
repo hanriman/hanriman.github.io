@@ -359,7 +359,7 @@ span.bold {
 }
 .toggle-text {
   font-family: "Plus Jakarta Sans", sans-serif;
-  transition: all 0.8s;
+  transition: 0.8s;
 }
 .toggle ._theme-1::before {
   content: "L";
@@ -395,7 +395,6 @@ span.bold {
 
 .fa-moon-o:before {
   padding: 1px;
-  transition: all 0.8s;
 }
 
 .light {
