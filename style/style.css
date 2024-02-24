@@ -162,7 +162,7 @@ span.c2 {
 }
 @media (min-width: 769px) {
   .header {
-    font-size: 16px;
+    font-size: 13px;
   }
   .header-nav ol {
     row-gap: 13px;
@@ -214,7 +214,7 @@ span.bold {
 }
 @media (min-width: 769px) {
   .main {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 @media (min-width: 1024px) {
@@ -307,7 +307,7 @@ span.bold {
     font-size: 21px;
   }
   span.c4 {
-    font-size: 16px;
+    font-size: 13px;
   }
   .get-in-touch-frame {
     width: 311px;
@@ -319,7 +319,7 @@ span.bold {
 }
 @media (min-width: 769px) {
   .footer {
-    font-size: 16px;
+    font-size: 13px;
   }
   .get-in-touch-nav ol {
     row-gap: 21px;
@@ -338,9 +338,9 @@ span.bold {
 .toggle {
   background-color: var(--c-white);
   padding: 0.2px;
+  padding-top: 1px;
   color: var(--c-blue);
   cursor: pointer;
-  font-size: 13px;
 
   position: absolute;
   left: 0px;
@@ -359,6 +359,7 @@ span.bold {
 }
 .toggle-text {
   font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
   transition: 0.8s;
 }
 .toggle ._theme-1::before {
