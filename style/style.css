@@ -348,7 +348,6 @@ span.bold {
   margin-top: -55px;
 
   text-align: center;
-  transition: all 0.8s;
 }
 .toggle:hover {
   text-shadow: var(--c-black) 1px 0 5px;
