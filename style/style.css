@@ -337,7 +337,7 @@ span.bold {
 
 .toggle {
   background-color: var(--c-white);
-  padding: 0.5px;
+  padding: 0.2px;
   color: var(--c-blue);
   cursor: pointer;
   font-size: 13px;
