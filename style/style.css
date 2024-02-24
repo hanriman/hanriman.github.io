@@ -34,8 +34,6 @@ html {
 a {
   color: var(--c-white);
   text-decoration: none;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
   transition: all 0.8s;
 }
 ol,
@@ -56,8 +54,6 @@ body {
   height: 100%;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 13px;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
   transition: all 0.8s;
 }
 .content-frame::-webkit-scrollbar {
@@ -72,8 +68,8 @@ body {
 }
 .site-frame {
   position: absolute;
-  left: 17px;
-  right: 17px;
+  left: 21px;
+  right: 21px;
   top: 13px;
   bottom: 13px;
   border: 1px solid var(--c-white);
@@ -101,13 +97,10 @@ body {
   pointer-events: none;
 }
 .header-title {
-  font-size: 27px;
   font-weight: 233;
 }
 span.c2 {
   color: var(--c-gold);
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
   transition: all 0.8s;
   text-shadow: var(--c-gold) 1px 0 21px;
 }
@@ -126,9 +119,6 @@ span.c2 {
 }
 .header-nav ol li {
   position: relative;
-  transition-property: opacity;
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.5, 0.2, 1);
 }
 .header-nav ol li ._dot {
   position: absolute;
@@ -136,15 +126,10 @@ span.c2 {
   font-size: 5px;
   color: var(--c-gold);
   opacity: 0;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
   transition: all 0.8s;
 }
 .header-nav ol li ._text {
   transition: all 0.8s;
-  transition-property: opacity;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
 }
 .header-nav ol li ._text::before {
   content: "";
@@ -297,16 +282,8 @@ span.bold {
   flex-direction: column;
   row-gap: 8px;
 }
-.get-in-touch-nav ol li {
-  transition-property: opacity;
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(0.1, 0.5, 0.2, 1);
-}
 .get-in-touch-nav ol li ._text {
   transition: all 0.8s;
-  transition-property: opacity;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
 }
 .get-in-touch-nav ol li ._text::before {
   content: "";
