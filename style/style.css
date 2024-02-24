@@ -150,10 +150,9 @@ span.c2 {
   content: "";
   display: block;
 }
-@media (hover: hover) {
-  .header-nav ol li ._text:hover {
-    opacity: 0.25;
-  }
+.header-nav ol li ._text:hover {
+  color: var(--c-gold);
+  text-shadow: var(--c-gold) 1px 0 5px;
 }
 .header-nav ol li.is-selected {
   pointer-events: none;
@@ -317,10 +316,9 @@ span.bold {
   width: calc(100% + 10px);
   height: calc(100% + 10px);
 }
-@media (hover: hover) {
-  .get-in-touch-nav ol li ._text:hover {
-    opacity: 0.25;
-  }
+.get-in-touch-nav ol li ._text:hover {
+  color: var(--c-gold);
+  text-shadow: var(--c-gold) 1px 0 5px;
 }
 @media (min-width: 426px) {
   .footer {
@@ -362,7 +360,7 @@ span.bold {
 
 .toggle {
   background-color: var(--c-white);
-  padding: 2px;
+  padding: 4px;
   color: var(--c-blue);
   cursor: pointer;
 
@@ -372,6 +370,10 @@ span.bold {
   margin-top: -55px;
 
   text-align: center;
+  transition: all 0.8s;
+}
+.toggle:hover {
+  text-shadow: var(--c-black) 1px 0 5px;
 }
 @media (min-width: 426px) {
   .toggle {
@@ -459,6 +461,9 @@ span.bold {
 .light a {
   color: var(--c-blue);
 }
+.light .toggle:hover {
+  text-shadow: var(--c-gold) 2px 0 5px;
+}
 .light ._light {
   color: var(--c-gold);
 }
@@ -468,6 +473,10 @@ span.bold {
 }
 .light .site-frame {
   border: 1px solid var(--c-blue);
+}
+.light .header-nav ol li ._text:hover {
+  color: var(--c-black);
+  text-shadow: var(--c-blue) 1px 0 5px;
 }
 .light .header-nav ol li ._dot {
   color: var(--c-black);
@@ -488,4 +497,8 @@ span.bold {
 }
 .light .get-in-touch-frame {
   border: 1px solid var(--c-blue);
+}
+.light .get-in-touch-nav ol li ._text:hover {
+  color: var(--c-black);
+  text-shadow: var(--c-black) 1px 0 5px;
 }
