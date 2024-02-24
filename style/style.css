@@ -68,10 +68,10 @@ body {
 }
 .site-frame {
   position: absolute;
-  left: 21px;
-  right: 21px;
-  top: 13px;
-  bottom: 13px;
+  left: 13px;
+  right: 13px;
+  top: 8px;
+  bottom: 8px;
   border: 1px solid var(--c-white);
   overflow: auto;
   pointer-events: auto;
@@ -337,9 +337,10 @@ span.bold {
 
 .toggle {
   background-color: var(--c-white);
-  padding: 4px;
+  padding: 0.5px;
   color: var(--c-blue);
   cursor: pointer;
+  font-size: 13px;
 
   position: absolute;
   left: 0px;
