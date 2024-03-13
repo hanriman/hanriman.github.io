@@ -31,22 +31,6 @@ html {
   --pad-vertical: max(34px);
 }
 
-button {
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  margin-top: 21px;
-  margin-bottom: 21px;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.back-button a ._text:hover {
-  color: var(--c-gold);
-  text-shadow: var(--c-gold) 1px 0 5px;
-}
 a {
   color: var(--c-white);
   text-decoration: none;
@@ -75,12 +59,9 @@ body {
 .content-frame::-webkit-scrollbar {
   display: none;
 }
-.canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 89%;
-  width: 100%;
+.content-frame {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .site-frame {
   position: absolute;
@@ -178,7 +159,7 @@ span.c2 {
 }
 @media (min-width: 769px) {
   .header {
-    font-size: 15.48px;
+    font-size: 16px;
   }
   .header-nav ol {
     row-gap: 13px;
@@ -230,7 +211,7 @@ span.bold {
 }
 @media (min-width: 769px) {
   main {
-    font-size: 15.48px;
+    font-size: 16px;
   }
 }
 @media (min-width: 1024px) {
@@ -323,7 +304,7 @@ span.bold {
     font-size: 21px;
   }
   span.c4 {
-    font-size: 15.48px;
+    font-size: 16px;
   }
   .get-in-touch-frame {
     width: 311px;
@@ -335,7 +316,7 @@ span.bold {
 }
 @media (min-width: 769px) {
   .footer {
-    font-size: 15.48px;
+    font-size: 16px;
   }
   .get-in-touch-nav ol {
     row-gap: 21px;
@@ -495,60 +476,4 @@ span.bold {
 .light .get-in-touch-nav ol li ._text:hover {
   color: var(--c-black);
   text-shadow: var(--c-black) 1px 0 5px;
-}
-.light .blob {
-  color: var(--c-black);
-}
-.light .blob::before {
-  border: 0.3px solid var(--c-black);
-}
-.light .blob::after {
-  border: 0.3px solid var(--c-blue);
-  box-shadow: none;
-}
-.blob {
-  position: relative;
-  top: 34%;
-  left: 34%;
-  width: 233px;
-  height: 233px;
-  color: var(--c-white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.8s;
-}
-.blob::before {
-  position: absolute;
-  border: 1px solid var(--c-white);
-  border-radius: 89% 55% 89% 55% / 55% 89% 55% 55%;
-  width: 100%;
-  height: 100%;
-  content: "";
-  left: 0;
-  top: 0;
-  animation: rotate 8s ease-in-out infinite;
-}
-.blob::after {
-  position: absolute;
-  border: 1px solid var(--c-gold);
-  border-radius: 55% 55% 55% 55% / 55% 34% 55% 55%;
-  box-shadow: var(--c-gold) 1px 0 5px;
-  width: 100%;
-  height: 100%;
-  content: "";
-  left: 0;
-  top: 0;
-  animation: rotate 8s ease-in-out infinite;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg) scale(0.8);
-  }
-  50% {
-    transform: rotate(180deg) scale(2.1);
-  }
-  100% {
-    transform: rotate(360deg) scale(0.8);
-  }
 }

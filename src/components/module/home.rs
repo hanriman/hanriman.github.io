@@ -1,0 +1,28 @@
+use yew::{function_component, html, Html};
+
+#[function_component(Home)]
+pub fn home() -> Html {
+    html! {
+        // content-->
+        <main class="home-frame">
+            // content box-->
+            <div class="content-frame">
+                <p class="content"> {
+                    "Hi, I'm Hanifan Rizki Nurahman.
+                    A Solution Architect at IBM-JTI and a Statistics graduate from the
+                    Padjadjaran University. My main focus these days is explore the
+                    possibility of generative AI and Rust web development with Axum
+                    and Leptos.
+                    In my free time you'll find me grinding my programming skills at
+                    Leetcode, or write some blogs article to add some internet
+                    footprint in this vast and crowded world.
+                    <br />
+                    Check out my
+                    Resume for more
+                    details." 
+                }
+                </p>
+            </div>
+        </main>
+    }
+}
