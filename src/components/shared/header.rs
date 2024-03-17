@@ -8,12 +8,12 @@ pub fn header() -> Html {
         // header-->
         <header class="header">
             <h1 class="header-title">
-                <span class="c1">{ "Hanifan |" }</span> <span class="c2">{ "Home" }</span>
+                <span class="c1">{ "Hanifan Rizki " }</span> <span class="c2">{ "Nurahman" }</span>
             </h1>
             <p class="header-label">{ "Software Engineer" }</p>
             <nav class="header-nav" aria-label="site menu">
                 <ol>
-                    <li class="is-selected">
+                    <li>
                         <div class="_dot">{ "●" }</div>
                         <a class="_text">
                             <Link<Route> to={Route::Home}>

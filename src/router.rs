@@ -1,6 +1,6 @@
 use crate::components::module::{home::Home, projects::Projects, resume::Resume};
 use yew::{html, Html};
-use yew_router::prelude::*;
+use yew_router::prelude::Routable;
 
 /// App routes
 #[derive(Routable, Clone, PartialEq)]

@@ -21,7 +21,7 @@ pub fn footer() -> Html {
                         class="_text"
                         href="https://github.com/hanifanrn"
                         target="_blank"
-                        >{ "Github" }
+                        >{ "Github " }
                         <NewTabSVG />
                       </a>
                     </li>
@@ -30,7 +30,7 @@ pub fn footer() -> Html {
                         class="_text"
                         href="https://linkedin.com/in/hanifanrn"
                         target="_blank"
-                        >{ "Linkedin" }
+                        >{ "Linkedin " }
                         <NewTabSVG />
                       </a>
                     </li>
@@ -39,7 +39,7 @@ pub fn footer() -> Html {
                         class="_text"
                         href="https://leetcode.com/hanifanrn/"
                         target="_blank"
-                        >{ "Leetcode" }
+                        >{ "Leetcode " }
                         <NewTabSVG />
                       </a>
                     </li>
@@ -48,7 +48,7 @@ pub fn footer() -> Html {
                         class="_text"
                         href="https://www.youtube.com/@hanifanrn"
                         target="_blank"
-                        >{ "Youtube" }
+                        >{ "Youtube " }
                         <NewTabSVG />
                       </a>
                     </li>
@@ -57,7 +57,7 @@ pub fn footer() -> Html {
                         class="_text"
                         href="https://twitter.com/syntaxmaker"
                         target="_blank"
-                        >{ "Twitter" }
+                        >{ "Twitter " }
                         <NewTabSVG />
                       </a>
                     </li>
