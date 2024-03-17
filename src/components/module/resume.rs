@@ -4,7 +4,7 @@ use yew::{function_component, html, Html};
 pub fn resume() -> Html {
     html! {
         // content
-        <main class="resume-frame">
+        <div class="main resume-frame">
         // content box
             <div class="content-frame">
                 <p class="content">
@@ -52,6 +52,6 @@ pub fn resume() -> Html {
                     points, please send me an email at hanifanrizki@gmail.com" }
                 </p>
             </div>
-        </main>
+        </div>
     }
 }

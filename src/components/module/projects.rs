@@ -4,7 +4,7 @@ use yew::{function_component, html, Html};
 pub fn projects() -> Html {
     html! {
         // content-->
-        <main class="projects-frame">
+        <div class="main projects-frame">
             // content box-->
             <div class="content-frame">
                 <p class="content"> {
@@ -12,6 +12,6 @@ pub fn projects() -> Html {
                 }
                 </p>
             </div>
-        </main>
+        </div>
     }
 }

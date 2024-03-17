@@ -4,7 +4,7 @@ use yew::{function_component, html, Html};
 pub fn home() -> Html {
     html! {
         // content-->
-        <main class="home-frame">
+        <div class="main home-frame">
             // content box-->
             <div class="content-frame">
 
@@ -23,6 +23,6 @@ pub fn home() -> Html {
                     {"Check out my resume for more details."}
                 </p>
             </div>
-        </main>
+        </div>
     }
 }

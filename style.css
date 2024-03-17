@@ -174,7 +174,7 @@ span.c2 {
   }
 }
 
-main {
+.main {
   position: relative;
   margin-top: 13px;
   margin-bottom: 13px;
@@ -203,19 +203,19 @@ span.bold {
   font-family: "Plus Jakarta Sans-bold", sans-serif;
 }
 @media (min-width: 426px) {
-  main {
+  .main {
     margin-left: 21px;
     margin-right: 21px;
     margin-bottom: 13px;
   }
 }
 @media (min-width: 769px) {
-  main {
+  .main {
     font-size: 16px;
   }
 }
 @media (min-width: 1024px) {
-  main {
+  .main {
     position: absolute;
     right: 21px;
     bottom: 13px;

@@ -8,8 +8,7 @@ use yew_router::prelude::{HashRouter, Switch};
 pub fn app() -> Html {
     html! {
         <HashRouter>
-            <body>
-
+            <main>
                 // web frame
                 <div class="site-frame">
                     <section class="header-main-section">
@@ -25,7 +24,7 @@ pub fn app() -> Html {
                 // dark or light theme script
                 <script rel="js" src="scripts/jquery.min.js"></script>
                 <script rel="js" src="script-dd8916233d930b59.js"></script>
-            </body>
+            </main>
         </HashRouter>
     }
 }
