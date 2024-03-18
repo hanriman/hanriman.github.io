@@ -1,4 +1,4 @@
-use crate::components::shared::new_tab_svg::NewTabSVG;
+use crate::components::shared::svg::new_tab_svg::NewTabSVG;
 use yew::{function_component, html, Html};
 
 #[function_component(Footer)]
@@ -7,7 +7,7 @@ pub fn footer() -> Html {
         <footer class="footer">
             // get in touch text-->
             <p class="get-in-touch-text">
-               <span class="c3">{ "Get in touch |" }</span>
+               <span class="c3">{ "Get in touch | " }</span>
                <span class="c4"> { "hanifanrizki@gmail.com" }</span>
             </p>
 

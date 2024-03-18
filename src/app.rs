@@ -1,30 +1,51 @@
 use crate::components::shared::{footer::Footer, header::Header, theme_button::ThemeButton};
-use crate::router::{switch, Route};
-use yew::{function_component, html, Html};
-use yew_router::prelude::{HashRouter, Switch};
+use crate::utils::{
+    router::{switch, AppRoute},
+    theme::{AppContext, ThemeState},
+};
+use gloo_console::{error as console_error, log as console_log};
+use gloo_storage::{LocalStorage, Storage};
+use yew::prelude::*;
+use yew_router::{HashRouter, Switch};
 
-/// The root app component
 #[function_component(App)]
 pub fn app() -> Html {
+    let theme: UseReducerHandle<ThemeState> = use_reducer(ThemeState::default);
+    let theme_cycle: Vec<&str> = vec!["light", "dark"];
+
+    {
+        /* Set the local storage to the current theme (& if it changes) */
+        let theme: UseReducerHandle<ThemeState> = theme.clone();
+        use_effect_with(
+            theme.clone(),
+            move |theme: &UseReducerHandle<ThemeState>| {
+                match LocalStorage::set("theme", &theme.current) {
+					Ok(()) => console_log!(format!("Theme set to {}", &theme.current)),
+					_ => console_error!("Couldn't set LocalStorage. Please turn the feature in your Browser on if possible."),
+	    		};
+                || ()
+            },
+        )
+    }
+
     html! {
+    <ContextProvider<AppContext> context={AppContext {
+        theme: theme.clone(),
+        theme_cycle: theme_cycle
+    }}>
         <HashRouter>
-            <main>
-                // web frame
+            <main class={theme.current}>
                 <div class="site-frame">
                     <section class="header-main-section">
                         <Header />
-                        <Switch<Route> render={switch} />
+                        <Switch<AppRoute> render={switch} />
                     </section>
-
                     <Footer />
                 </div>
 
                 <ThemeButton />
-
-                // dark or light theme script
-                <script rel="js" src="scripts/jquery.min.js"></script>
-                <script rel="js" src="script-dd8916233d930b59.js"></script>
             </main>
         </HashRouter>
+    </ContextProvider<AppContext>>
     }
 }

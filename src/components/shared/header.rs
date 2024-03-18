@@ -1,6 +1,6 @@
-use crate::router::Route;
+use crate::utils::router::AppRoute;
 use yew::{function_component, html, Html};
-use yew_router::prelude::Link;
+use yew_router::prelude::{use_route, Link};
 
 #[function_component(Header)]
 pub fn header() -> Html {
@@ -8,34 +8,25 @@ pub fn header() -> Html {
         // header-->
         <header class="header">
             <h1 class="header-title">
-                <span class="c1">{ "Hanifan Rizki " }</span> <span class="c2">{ "Nurahman" }</span>
+                <span class="c2">{ "Hanifan " }</span> <span class="c1">{ "Rizki Nurahman" }</span>
             </h1>
             <p class="header-label">{ "Software Engineer" }</p>
             <nav class="header-nav" aria-label="site menu">
                 <ol>
                     <li>
-                        <div class="_dot">{ "●" }</div>
-                        <a class="_text">
-                            <Link<Route> to={Route::Home}>
+                            <Link<AppRoute> to={AppRoute::Home}>
                                 { "Home" }
-                            </Link<Route>>
-                        </a>
+                            </Link<AppRoute>>
                     </li>
                     <li>
-                        <div class="_dot">{ "●" }</div>
-                        <a class="_text">
-                            <Link<Route> to={Route::Resume}>
+                            <Link<AppRoute> to={AppRoute::Resume}>
                                 { "Resume" }
-                            </Link<Route>>
-                        </a>
+                            </Link<AppRoute>>
                     </li>
                     <li>
-                        <div class="_dot">{ "●" }</div>
-                        <a class="_text">
-                            <Link<Route> to={Route::Projects}>
+                            <Link<AppRoute> to={AppRoute::Projects}>
                                 { "Projects" }
-                            </Link<Route>>
-                        </a>
+                            </Link<AppRoute>>
                     </li>
                 </ol>
             </nav>

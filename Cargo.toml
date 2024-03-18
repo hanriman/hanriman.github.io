@@ -6,5 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-yew = { version = "0.20.0", features = ["csr"] }
-yew-router = "0.17.0"
+yew = { version = "0.21.0", features = ["csr"] }
+yew-router = "0.18.0"
+gloo-console = "0.3"
+gloo-storage = "0.3"
+web-sys = { version = "0.3.68", features = ["Navigator", "MediaQueryList"] }

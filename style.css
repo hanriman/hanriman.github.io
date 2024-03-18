@@ -43,7 +43,7 @@ ul {
 ._link {
   text-decoration: underline;
 }
-body {
+main {
   background: var(--c-blue);
   color: var(--c-white);
   overflow: hidden;
@@ -117,34 +117,9 @@ span.c2 {
 .header-nav ol li {
   position: relative;
 }
-.header-nav ol li ._dot {
-  position: absolute;
-  top: 5px;
-  font-size: 8px;
+.header-nav ol li a:hover {
   color: var(--c-gold);
-  opacity: 0;
-  transition: all 0.8s;
-}
-.header-nav ol li ._text {
-  transition: all 0.8s;
-}
-.header-nav ol li ._text::before {
-  content: "";
-  display: block;
-}
-.header-nav ol li ._text:hover {
-  color: var(--c-gold);
-  text-shadow: var(--c-gold) 1px 0 5px;
-}
-.header-nav ol li.is-selected {
-  pointer-events: none;
-}
-.header-nav ol li.is-selected ._dot {
-  opacity: 1;
-  text-shadow: var(--c-gold) 1px 0 5px;
-}
-.header-nav ol li.is-selected ._text {
-  opacity: 0;
+  border: 0.5px solid var(--c-gold);
 }
 @media (min-width: 426px) {
   .header {
@@ -283,8 +258,6 @@ span.bold {
   transition: all 0.8s;
 }
 .get-in-touch-nav ol li ._text::before {
-  content: "";
-  display: block;
   left: -5px;
   top: -5px;
   width: calc(100% + 10px);
@@ -390,10 +363,6 @@ span.bold {
   content: "E";
 }
 
-.fa-moon-o:before {
-  padding: 1px;
-}
-
 .light {
   background-color: var(--c-white);
   color: var(--c-blue);
@@ -444,18 +413,14 @@ span.bold {
 }
 .light span.c2 {
   color: var(--c-black);
-  text-shadow: var(--c-black) 1px 0 21px;
+  text-shadow: var(--c-black) 5px 0 55px;
 }
 .light .site-frame {
   border: 1px solid var(--c-blue);
 }
-.light .header-nav ol li ._text:hover {
-  color: var(--c-black);
-  text-shadow: var(--c-blue) 1px 0 5px;
-}
-.light .header-nav ol li ._dot {
-  color: var(--c-black);
-  text-shadow: var(--c-black) 1px 0 5px;
+.light .header-nav ol li a:hover {
+  color: var(--c-blue);
+  border: 0.5px solid var(--c-blue);
 }
 .light .content-frame {
   border-top: 1px solid var(--c-blue);
@@ -474,6 +439,6 @@ span.bold {
   border: 1px solid var(--c-blue);
 }
 .light .get-in-touch-nav ol li ._text:hover {
-  color: var(--c-black);
-  text-shadow: var(--c-black) 1px 0 5px;
+  color: var(--c-blue);
+  text-shadow: var(--c-blue) 1px 0 5px;
 }

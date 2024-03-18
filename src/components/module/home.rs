@@ -15,7 +15,7 @@ pub fn home() -> Html {
                     Padjadjaran University. My main focus these days is explore the
                     possibility of generative AI and Rust web development with Axum
                     and Yew."}
-                    <br />
+                    <br /><br />
                     {"In my free time you'll find me grinding my programming skills at
                     Leetcode, or write some blogs article to add some internet
                     footprint in this vast and crowded world."}

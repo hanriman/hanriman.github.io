@@ -4,7 +4,7 @@ use yew_router::prelude::Routable;
 
 /// App routes
 #[derive(Routable, Clone, PartialEq)]
-pub enum Route {
+pub enum AppRoute {
     #[at("/")]
     Home,
     #[at("/resume")]
@@ -16,11 +16,11 @@ pub enum Route {
     NotFound,
 }
 
-pub fn switch(route: Route) -> Html {
+pub fn switch(route: AppRoute) -> Html {
     match route {
-        Route::Home => html! {<Home />},
-        Route::Resume => html! {<Resume />},
-        Route::Projects => html! {<Projects />},
-        Route::NotFound => html! { "Page not found" },
+        AppRoute::Home => html! {<Home />},
+        AppRoute::Resume => html! {<Resume />},
+        AppRoute::Projects => html! {<Projects />},
+        AppRoute::NotFound => html! { "Page not found" },
     }
 }
