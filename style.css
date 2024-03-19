@@ -1,5 +1,3 @@
-@import url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
-
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +41,18 @@ ul {
 ._link {
   text-decoration: underline;
 }
+._link:hover {
+  color: var(--c-gold);
+  border: 0.5px solid var(--c-gold);
+}
+._link-new-tab:hover {
+  color: var(--c-gold);
+  text-shadow: var(--c-gold) 1px 0 5px;
+}
+.light ._link-new-tab:hover {
+  color: var(--c-blue);
+  text-shadow: var(--c-blue) 1px 0 5px;
+}
 main {
   background: var(--c-blue);
   color: var(--c-white);
@@ -55,6 +65,23 @@ main {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 13px;
   transition: all 0.8s;
+}
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+.back-button a:hover {
+  color: var(--c-gold);
+}
+.back-button:hover {
+  border: 0.5px solid var(--c-gold);
+}
+.light .back-button a:hover {
+  color: var(--c-blue);
 }
 .content-frame::-webkit-scrollbar {
   display: none;
@@ -173,6 +200,11 @@ span.c2 {
   margin-left: 8px;
   margin-right: 8px;
   line-height: 1.3;
+}
+.content ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
 span.bold {
   font-family: "Plus Jakarta Sans-bold", sans-serif;
@@ -411,6 +443,10 @@ span.bold {
 .light ._light {
   color: var(--c-gold);
 }
+.light .back-button:hover {
+  color: var(--c-blue);
+  border: 0.5px solid var(--c-blue);
+}
 .light span.c2 {
   color: var(--c-black);
   text-shadow: var(--c-black) 5px 0 55px;
@@ -419,6 +455,10 @@ span.bold {
   border: 1px solid var(--c-blue);
 }
 .light .header-nav ol li a:hover {
+  color: var(--c-blue);
+  border: 0.5px solid var(--c-blue);
+}
+.light ._link:hover {
   color: var(--c-blue);
   border: 0.5px solid var(--c-blue);
 }
@@ -441,4 +481,61 @@ span.bold {
 .light .get-in-touch-nav ol li ._text:hover {
   color: var(--c-blue);
   text-shadow: var(--c-blue) 1px 0 5px;
+}
+
+.light .blob {
+  color: var(--c-black);
+}
+.light .blob::before {
+  border: 0.3px solid var(--c-black);
+}
+.light .blob::after {
+  border: 0.3px solid var(--c-blue);
+  box-shadow: none;
+}
+.blob {
+  position: relative;
+  top: 144px;
+  left: 233px;
+  width: 233px;
+  height: 233px;
+  color: var(--c-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s;
+}
+.blob::before {
+  position: absolute;
+  border: 1px solid var(--c-white);
+  border-radius: 89% 55% 89% 55% / 55% 89% 55% 55%;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  top: 0;
+  animation: rotate 8s ease-in-out infinite;
+}
+.blob::after {
+  position: absolute;
+  border: 1px solid var(--c-gold);
+  border-radius: 55% 55% 55% 55% / 55% 34% 55% 55%;
+  box-shadow: var(--c-gold) 1px 0 5px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  top: 0;
+  animation: rotate 8s ease-in-out infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(180deg) scale(2.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.8);
+  }
 }

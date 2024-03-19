@@ -1,4 +1,10 @@
-use crate::components::module::{home::Home, projects::Projects, resume::Resume};
+use crate::components::module::{
+    home::Home,
+    page_not_found::NotFound,
+    projects::Projects,
+    projects_content::{personal_website::PersonalWebsite, take_a_deep_breath::TakeADeepBreath},
+    resume::Resume,
+};
 use yew::{html, Html};
 use yew_router::prelude::Routable;
 
@@ -11,6 +17,10 @@ pub enum AppRoute {
     Resume,
     #[at("/projects")]
     Projects,
+    #[at("/personal-website")]
+    PersonalWebsite,
+    #[at("/take-a-deep-breath")]
+    TakeADeepBreath,
     #[not_found]
     #[at("/404")]
     NotFound,
@@ -21,6 +31,8 @@ pub fn switch(route: AppRoute) -> Html {
         AppRoute::Home => html! {<Home />},
         AppRoute::Resume => html! {<Resume />},
         AppRoute::Projects => html! {<Projects />},
-        AppRoute::NotFound => html! { "Page not found" },
+        AppRoute::PersonalWebsite => html! {<PersonalWebsite />},
+        AppRoute::TakeADeepBreath => html! {<TakeADeepBreath />},
+        AppRoute::NotFound => html! {<NotFound />},
     }
 }

@@ -14,19 +14,19 @@ pub fn header() -> Html {
             <nav class="header-nav" aria-label="site menu">
                 <ol>
                     <li>
-                            <Link<AppRoute> to={AppRoute::Home}>
-                                { "Home" }
-                            </Link<AppRoute>>
+                        <Link<AppRoute> to={AppRoute::Home}>
+                            { "Home" }
+                        </Link<AppRoute>>
                     </li>
                     <li>
-                            <Link<AppRoute> to={AppRoute::Resume}>
-                                { "Resume" }
-                            </Link<AppRoute>>
+                        <Link<AppRoute> to={AppRoute::Resume}>
+                            { "Resume" }
+                        </Link<AppRoute>>
                     </li>
                     <li>
-                            <Link<AppRoute> to={AppRoute::Projects}>
-                                { "Projects" }
-                            </Link<AppRoute>>
+                        <Link<AppRoute> to={AppRoute::Projects}>
+                            { "Projects" }
+                        </Link<AppRoute>>
                     </li>
                 </ol>
             </nav>

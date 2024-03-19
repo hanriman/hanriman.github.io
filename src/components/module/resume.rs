@@ -1,3 +1,4 @@
+use crate::components::shared::svg::new_tab_svg::NewTabSVG;
 use yew::{function_component, html, Html};
 
 #[function_component(Resume)]
@@ -7,29 +8,31 @@ pub fn resume() -> Html {
         <div class="main resume-frame">
         // content box
             <div class="content-frame">
-                <p class="content">
-                    { "Download Resume" }
+                <div class="content">
+                    { "Download Resume " }
+                    <a>{"[ "}</a>
                     <a
-                        class="_link"
-                        rel="copy-file"
-                        href="./assets/Hanifan Rizki Nurahman.pdf"
+                        class="_link-new-tab"
+                        href="https://drive.google.com/file/d/1cFOMYojhK7rQpwDqr0TukBozEJ9jiIth/view?usp=sharing"
                         target="_blank"
-                        >{ "[link]" }</a
-                    >
+                        >{ "link " }
+                        <NewTabSVG />
+                        </a>
+                    <a>{"]"}</a>
                     <br /><br />
                     { "Primary Toolkits:" }
                     <br />
                     <span class="bold">{ "- Programming Language" }</span>
-                    { ": Python, Rust, Javascript " }
+                    { ": Python, Rust" }
                     <br />
                     <span class="bold">{ "- Data Analytics" }</span>
                     { ": Pandas, Numpy, Scikit-learn, Tensorflow" }
                     <br />
                     <span class="bold">{ "- Backend" }</span>
-                    { ": Flask, Axum" }
+                    { ": Axum" }
                     <br />
                     <span class="bold">{ "- Frontend" }</span>
-                    { ": HTML5, CSS3, Javascript" }
+                    { ": HTML5, CSS3, Rust(Yew)" }
                     <br />
                     <span class="bold">{ "- Databases" }</span>
                     { ": PostgreSQL, MongoDB,
@@ -50,7 +53,7 @@ pub fn resume() -> Html {
                     <br /><br />
                     { "If you would like a full CV or would like me to elaborate on any
                     points, please send me an email at hanifanrizki@gmail.com" }
-                </p>
+                </div>
             </div>
         </div>
     }
