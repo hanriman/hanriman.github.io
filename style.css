@@ -1,5 +1,3 @@
-@import url("//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
-
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +41,19 @@ ul {
 ._link {
   text-decoration: underline;
 }
-body {
+._link:hover {
+  color: var(--c-gold);
+  border: 0.5px solid var(--c-gold);
+}
+._link-new-tab:hover {
+  color: var(--c-gold);
+  text-shadow: var(--c-gold) 1px 0 5px;
+}
+.light ._link-new-tab:hover {
+  color: var(--c-blue);
+  text-shadow: var(--c-blue) 1px 0 5px;
+}
+main {
   background: var(--c-blue);
   color: var(--c-white);
   overflow: hidden;
@@ -56,15 +66,29 @@ body {
   font-size: 13px;
   transition: all 0.8s;
 }
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+.back-button a:hover {
+  color: var(--c-gold);
+}
+.back-button:hover {
+  border: 0.5px solid var(--c-gold);
+}
+.light .back-button a:hover {
+  color: var(--c-blue);
+}
 .content-frame::-webkit-scrollbar {
   display: none;
 }
-.canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 89%;
-  width: 100%;
+.content-frame {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .site-frame {
   position: absolute;
@@ -120,34 +144,9 @@ span.c2 {
 .header-nav ol li {
   position: relative;
 }
-.header-nav ol li ._dot {
-  position: absolute;
-  top: 5px;
-  font-size: 5px;
+.header-nav ol li a:hover {
   color: var(--c-gold);
-  opacity: 0;
-  transition: all 0.8s;
-}
-.header-nav ol li ._text {
-  transition: all 0.8s;
-}
-.header-nav ol li ._text::before {
-  content: "";
-  display: block;
-}
-.header-nav ol li ._text:hover {
-  color: var(--c-gold);
-  text-shadow: var(--c-gold) 1px 0 5px;
-}
-.header-nav ol li.is-selected {
-  pointer-events: none;
-}
-.header-nav ol li.is-selected ._dot {
-  opacity: 1;
-  text-shadow: var(--c-gold) 1px 0 5px;
-}
-.header-nav ol li.is-selected ._text {
-  opacity: 0;
+  border: 0.5px solid var(--c-gold);
 }
 @media (min-width: 426px) {
   .header {
@@ -162,7 +161,7 @@ span.c2 {
 }
 @media (min-width: 769px) {
   .header {
-    font-size: 15.48px;
+    font-size: 16px;
   }
   .header-nav ol {
     row-gap: 13px;
@@ -202,6 +201,11 @@ span.c2 {
   margin-right: 8px;
   line-height: 1.3;
 }
+.content ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
 span.bold {
   font-family: "Plus Jakarta Sans-bold", sans-serif;
 }
@@ -214,7 +218,7 @@ span.bold {
 }
 @media (min-width: 769px) {
   .main {
-    font-size: 15.48px;
+    font-size: 16px;
   }
 }
 @media (min-width: 1024px) {
@@ -286,8 +290,6 @@ span.bold {
   transition: all 0.8s;
 }
 .get-in-touch-nav ol li ._text::before {
-  content: "";
-  display: block;
   left: -5px;
   top: -5px;
   width: calc(100% + 10px);
@@ -307,7 +309,7 @@ span.bold {
     font-size: 21px;
   }
   span.c4 {
-    font-size: 15.48px;
+    font-size: 16px;
   }
   .get-in-touch-frame {
     width: 311px;
@@ -319,7 +321,7 @@ span.bold {
 }
 @media (min-width: 769px) {
   .footer {
-    font-size: 15.48px;
+    font-size: 16px;
   }
   .get-in-touch-nav ol {
     row-gap: 21px;
@@ -337,10 +339,10 @@ span.bold {
 
 .toggle {
   background-color: var(--c-white);
-  padding: 0.2px;
-  padding-top: 1px;
+  padding: 0.5px;
   color: var(--c-blue);
   cursor: pointer;
+  font-size: 13px;
 
   position: absolute;
   left: 0px;
@@ -359,8 +361,7 @@ span.bold {
 }
 .toggle-text {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 13px;
-  transition: 0.8s;
+  transition: all 0.8s;
 }
 .toggle ._theme-1::before {
   content: "L";
@@ -392,10 +393,6 @@ span.bold {
 }
 .toggle ._theme-10::before {
   content: "E";
-}
-
-.fa-moon-o:before {
-  padding: 1px;
 }
 
 .light {
@@ -446,20 +443,24 @@ span.bold {
 .light ._light {
   color: var(--c-gold);
 }
+.light .back-button:hover {
+  color: var(--c-blue);
+  border: 0.5px solid var(--c-blue);
+}
 .light span.c2 {
   color: var(--c-black);
-  text-shadow: var(--c-black) 1px 0 21px;
+  text-shadow: var(--c-black) 5px 0 55px;
 }
 .light .site-frame {
   border: 1px solid var(--c-blue);
 }
-.light .header-nav ol li ._text:hover {
-  color: var(--c-black);
-  text-shadow: var(--c-blue) 1px 0 5px;
+.light .header-nav ol li a:hover {
+  color: var(--c-blue);
+  border: 0.5px solid var(--c-blue);
 }
-.light .header-nav ol li ._dot {
-  color: var(--c-black);
-  text-shadow: var(--c-black) 1px 0 5px;
+.light ._link:hover {
+  color: var(--c-blue);
+  border: 0.5px solid var(--c-blue);
 }
 .light .content-frame {
   border-top: 1px solid var(--c-blue);
@@ -478,6 +479,63 @@ span.bold {
   border: 1px solid var(--c-blue);
 }
 .light .get-in-touch-nav ol li ._text:hover {
+  color: var(--c-blue);
+  text-shadow: var(--c-blue) 1px 0 5px;
+}
+
+.light .blob {
   color: var(--c-black);
-  text-shadow: var(--c-black) 1px 0 5px;
+}
+.light .blob::before {
+  border: 0.3px solid var(--c-black);
+}
+.light .blob::after {
+  border: 0.3px solid var(--c-blue);
+  box-shadow: none;
+}
+.blob {
+  position: relative;
+  top: 144px;
+  left: 233px;
+  width: 233px;
+  height: 233px;
+  color: var(--c-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s;
+}
+.blob::before {
+  position: absolute;
+  border: 1px solid var(--c-white);
+  border-radius: 89% 55% 89% 55% / 55% 89% 55% 55%;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  top: 0;
+  animation: rotate 8s ease-in-out infinite;
+}
+.blob::after {
+  position: absolute;
+  border: 1px solid var(--c-gold);
+  border-radius: 55% 55% 55% 55% / 55% 34% 55% 55%;
+  box-shadow: var(--c-gold) 1px 0 5px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  top: 0;
+  animation: rotate 8s ease-in-out infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(180deg) scale(2.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.8);
+  }
 }

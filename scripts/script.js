@@ -2,7 +2,6 @@ let theme = window.localStorage.currentTheme;
 
 $("body").addClass(theme);
 
-
 if ($("body").hasClass("light")) {
   $(".toggle").addClass("fa-moon-o");
   $(".toggle").removeClass("fa-sun-o");
