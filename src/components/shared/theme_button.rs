@@ -33,8 +33,8 @@ pub fn theme_button() -> Html {
     }
 
     html! {
-            <div class="toggle" onclick={ cycle_theme }>
-                <div class="toggle-text">
+            <div role="button" aria-lable="dark or light theme button" class="toggle" onclick={ cycle_theme }>
+                <div aria-hidden="true" class="toggle-text">
                     { handle_theme_icon(app_context.clone()) }
                     <div class="_theme-1"></div>
                     <div class="_theme-2"></div>

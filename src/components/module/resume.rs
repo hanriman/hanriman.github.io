@@ -29,10 +29,10 @@ pub fn resume() -> Html {
                     { ": Pandas, Numpy, Scikit-learn, Tensorflow" }
                     <br />
                     <span class="bold">{ "- Backend" }</span>
-                    { ": Axum" }
+                    { ": Rust (Axum)" }
                     <br />
                     <span class="bold">{ "- Frontend" }</span>
-                    { ": HTML5, CSS3, Rust(Yew)" }
+                    { ": HTML5, CSS3, Rust (Yew)" }
                     <br />
                     <span class="bold">{ "- Databases" }</span>
                     { ": PostgreSQL, MongoDB,
