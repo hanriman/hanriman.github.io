@@ -45,6 +45,9 @@ ul {
   color: var(--c-gold);
   border: 0.5px solid var(--c-gold);
 }
+._link-new-tab {
+  text-decoration: underline;
+}
 ._link-new-tab:hover {
   color: var(--c-gold);
   text-shadow: var(--c-gold) 1px 0 5px;
