@@ -1,6 +1,6 @@
 use crate::utils::router::AppRoute;
 use yew::{function_component, html, Html};
-use yew_router::prelude::{use_route, Link};
+use yew_router::prelude::Link;
 
 #[function_component(Header)]
 pub fn header() -> Html {

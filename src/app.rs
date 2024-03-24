@@ -19,7 +19,7 @@ pub fn app() -> Html {
         use_effect_with(
             theme.clone(),
             move |theme: &UseReducerHandle<ThemeState>| {
-                match LocalStorage::set("theme", &theme.current) {
+                match LocalStorage::set("theme", theme.current) {
 					Ok(()) => console_log!(format!("Theme set to {}", &theme.current)),
 					_ => console_error!("Couldn't set LocalStorage. Please turn the feature in your Browser on if possible."),
 	    		};
@@ -31,7 +31,7 @@ pub fn app() -> Html {
     html! {
     <ContextProvider<AppContext> context={AppContext {
         theme: theme.clone(),
-        theme_cycle: theme_cycle
+        theme_cycle
     }}>
         <HashRouter>
             <main class={theme.current}>

@@ -10,7 +10,7 @@ pub fn resume() -> Html {
             <div class="content-frame">
                 <div class="content">
                     { "Download Resume " }
-                    <a>{"[ "}</a>
+                    <span>{"[ "}</span>
                     <a
                         class="_link-new-tab"
                         href="https://drive.google.com/file/d/1cFOMYojhK7rQpwDqr0TukBozEJ9jiIth/view?usp=sharing"
@@ -18,7 +18,7 @@ pub fn resume() -> Html {
                         >{ "link " }
                         <NewTabSVG />
                         </a>
-                    <a>{"]"}</a>
+                    <span>{"]"}</span>
                     <br /><br />
                     { "Primary Toolkits:" }
                     <br />

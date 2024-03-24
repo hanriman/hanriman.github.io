@@ -4,17 +4,17 @@
 }
 @font-face {
   font-family: "Plus Jakarta Sans";
-  src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
+  src: url("assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
   font-weight: 377;
 }
 @font-face {
   font-family: "Plus Jakarta Sans-bold";
-  src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
+  src: url("assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
   font-weight: 610;
 }
 @font-face {
   font-family: "Plus Jakarta Sans-italic";
-  src: url("../fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf");
+  src: url("assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf");
   font-weight: 377;
 }
 html {

@@ -12,13 +12,13 @@ pub fn projects() -> Html {
                 <div class="content">
                     <ol>
                         <li>
-                            <a>{"Mar 2023 | "}</a>
+                            <a>{"Mar 2024 | "}</a>
                             <Link<AppRoute> to={AppRoute::TakeADeepBreath}>
                                 <a class="_link">{ "Take a Deep Breath" }</a>
                             </Link<AppRoute>>
                         </li>
                         <li>
-                            <a>{"Mar 2023 | "}</a>
+                            <a>{"Mar 2024 | "}</a>
                             <Link<AppRoute> to={AppRoute::PersonalWebsite}>
                                 <a class="_link">{ "Personal Website" }</a>
                             </Link<AppRoute>>
