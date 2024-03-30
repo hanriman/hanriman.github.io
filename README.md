@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Hanifanrn Website</h1>
-    <a href="https://hanfianrn.com/" target="_blank"><img src="assets/favicon/favicon.ico" width="150" /></a>
+    <a href="https://hanfianrn.com/" target="_blank"><img src="assets/favicon/android-chrome-512x512.png" width="150" /></a>
 </div>
 
 ## About
