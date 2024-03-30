@@ -3,7 +3,7 @@ use yew::{function_component, html, Html};
 #[function_component(Home)]
 pub fn home() -> Html {
     html! {
-        <div class="main home-frame">
+        <div class="frame home-frame">
             <div class="content-frame">
                 <div class="content">
                     <h2>

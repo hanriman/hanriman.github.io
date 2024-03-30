@@ -5,7 +5,7 @@ use yew::{function_component, html, Html};
 #[function_component(PersonalWebsite)]
 pub fn personal_website() -> Html {
     html! {
-        <div class="main projects-frame">
+        <div class="frame projects-frame">
             <div class="content-frame">
                 <div class="content">
                     <BackProjectButton />
@@ -61,7 +61,7 @@ pub fn personal_website() -> Html {
                         <p>
                             {"As for the tech stack, previously in 2023 I only use html, css and js
                             for static website that get deployed on github pages because I still 
-                            don’t know how to use Rust and after around a year learning Rust and 
+                            don’t know how to use Rust and after around a year of learning and 
                             exploring Rust frontend framework and webassembly I decided to rewrite 
                             my website using Leptos. Just to find out that Leptos still not yet support 
                             Hash Router for static website in Mar 2024. I need hash router so that the 

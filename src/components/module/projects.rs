@@ -7,7 +7,7 @@ use yew_router::prelude::Link;
 pub fn projects() -> Html {
     html! {
         // content-->
-        <div class="main projects-frame">
+        <div class="frame projects-frame">
             // content box-->
             <div class="content-frame">
                 <div class="content">

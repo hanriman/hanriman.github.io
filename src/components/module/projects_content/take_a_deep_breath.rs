@@ -4,7 +4,7 @@ use yew::{function_component, html, Html};
 #[function_component(TakeADeepBreath)]
 pub fn take_a_deep_breath() -> Html {
     html! {
-        <div class="main projects-frame">
+        <div class="frame projects-frame">
             <div class="content-frame">
                 <div class="content">
                     <BackProjectButton />

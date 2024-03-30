@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap')
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap")
 html {
   line-height: 1;
 }
@@ -74,8 +74,8 @@ main {
   border: 0.5px solid var(--c-gold);
 }
 .light ._link:hover {
-  color: var(--c-blue);
-  border: 0.5px solid var(--c-blue);
+  color: var(--c-black);
+  border: 0.5px solid var(--c-black);
 }
 ._link-new-tab {
   text-decoration: underline;
@@ -85,8 +85,8 @@ main {
   text-shadow: var(--c-gold) 1px 0 5px;
 }
 .light ._link-new-tab:hover {
-  color: var(--c-blue);
-  text-shadow: var(--c-blue) 1px 0 5px;
+  color: var(--c-black);
+  text-shadow: var(--c-black) 1px 0 13px;
 }
 .site-frame {
   position: absolute;
@@ -124,8 +124,8 @@ main {
   margin-right: 8px;
 }
 span.c2 {
-  color: var(--c-gold);
   transition: all 0.8s;
+  color: var(--c-gold);
   text-shadow: var(--c-gold) 1px 0 21px;
 }
 .light span.c2 {
@@ -153,10 +153,10 @@ span.c2 {
   border: 0.5px solid var(--c-gold);
 }
 .light .header-nav ol li a:hover {
-  color: var(--c-blue);
-  border: 0.5px solid var(--c-blue);
+  color: var(--c-black);
+  border: 0.5px solid var(--c-black);
 }
-.main {
+.frame {
   position: relative;
   margin-top: 13px;
   margin-bottom: 13px;
@@ -196,8 +196,8 @@ span.c2 {
   row-gap: 8px;
 }
 .publication {
-  border-left: 2px solid var(--c-gold);
   padding-left: 8px;
+  border-left: 2px solid var(--c-gold);
 }
 .light .publication {
   border-left: 2px solid var(--c-black);
@@ -229,10 +229,6 @@ span.c2 {
 .get-in-touch-nav ol li ._text {
   transition: all 0.8s;
 }
-.light .get-in-touch-nav ol li ._text:hover {
-  color: var(--c-blue);
-  text-shadow: var(--c-blue) 1px 0 5px;
-}
 .get-in-touch-nav ol li ._text::before {
   left: -5px;
   top: -5px;
@@ -242,6 +238,10 @@ span.c2 {
 .get-in-touch-nav ol li ._text:hover {
   color: var(--c-gold);
   text-shadow: var(--c-gold) 1px 0 5px;
+}
+.light .get-in-touch-nav ol li ._text:hover {
+  color: var(--c-black);
+  text-shadow: var(--c-black) 1px 0 13px;
 }
 .toggle {
   background-color: var(--c-white);
@@ -262,7 +262,7 @@ span.c2 {
   color: var(--c-gold);
 }
 .toggle:hover {
-  text-shadow: var(--c-black) 1px 0 5px;
+  text-shadow: var(--c-black) 1px 0 13px;
 }
 .light .toggle:hover {
   text-shadow: var(--c-gold) 2px 0 5px;
@@ -387,10 +387,10 @@ span.c2 {
   color: var(--c-black);
 }
 .light .blob::before {
-  border: 0.3px solid var(--c-black);
+  border: 0.3px solid var(--c-blue);
 }
 .light .blob::after {
-  border: 0.3px solid var(--c-blue);
+  border: 0.3px solid var(--c-black);
   box-shadow: none;
 }
 
@@ -407,7 +407,7 @@ span.c2 {
     margin-left: 21px;
     margin-right: 21px;
   }
-  .main {
+  .frame {
     margin-left: 21px;
     margin-right: 21px;
     margin-bottom: 13px;
@@ -453,7 +453,7 @@ span.c2 {
   h2 span {
     font-size: 17px;
   }
-  .main {
+  .frame {
     font-size: 17px;
   }
   .footer {
@@ -470,7 +470,7 @@ span.c2 {
   .header-nav {
     margin-top: 34px;
   }
-  .main {
+  .frame {
     position: absolute;
     right: 21px;
     bottom: 13px;

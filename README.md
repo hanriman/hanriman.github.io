@@ -17,10 +17,12 @@ for release mode:
 ```shell
 trunk serve --release
 ```
-the website will run at http://localhost:8080/#
 
 ### Run the Website on Github Pages
-To run this website on Github Pages, you can push this repository to your own github account. Make sure file .github/workflows/gn-pages-deploy.yml directory is included. gn-pages-deploy.yml will trigger github action to compiled the source code to Webassembly a 
+To run this website on Github Pages, you can push this repository to your own github account. Make sure file .github/workflows/gh-pages-deploy.yml directory is included. gh-pages-deploy.yml will trigger github action to compiled the source code to Webassembly artifacts and deploy it to github page.
+
+## Errata Policy
+I am trying my best to make this website as error-free as possible. If you find any errors, please let me know by open an [issue](https://github.com/hanifanrn/hanifanrn.github.io/issues)
 
 ## Licensed Under MIT
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

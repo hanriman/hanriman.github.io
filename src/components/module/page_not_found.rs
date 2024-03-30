@@ -4,10 +4,14 @@ use yew::{function_component, html, Html};
 pub fn not_found() -> Html {
     html! {
         // content-->
-        <div class="main projects-frame">
+        <div class="frame projects-frame">
             // content box-->
             <div class="content-frame">
-                {"Page Not Found"}
+                <div class="content">
+                    <h2 class="title">
+                        {"404 Page Not Found"}
+                    </h2>
+                </div>
             </div>
         </div>
     }
