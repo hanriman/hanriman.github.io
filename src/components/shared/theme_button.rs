@@ -28,9 +28,9 @@ pub fn theme_button() -> Html {
 
     fn handle_theme_icon(app_context: AppContext) -> Html {
         match app_context.theme.current {
-            "dark" => html! {<Dark class={Some("h-[1.5rem] w-[1.5rem] fill-slate-300")} />},
-            "light" => html! {<Light class={Some("h-[1.5rem] w-[1.5rem] fill-orange-400")} />},
-            _ => html! {<Dark class={Some("h-[1.5rem] w-[1.5rem] fill-slate-300")} />},
+            "dark" => html! {<Dark/>},
+            "light" => html! {<Light/>},
+            _ => html! {<Dark/>},
         }
     }
 

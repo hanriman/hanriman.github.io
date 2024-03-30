@@ -7,7 +7,7 @@ pub fn header() -> Html {
     html! {
         // header-->
         <header class="header">
-            <h1 class="header-title">
+            <h1>
                 <span class="c2">{ "Hanifan " }</span> <span class="c1">{ "Rizki Nurahman" }</span>
             </h1>
             <p class="header-label">{ "Software Engineer" }</p>
@@ -15,17 +15,17 @@ pub fn header() -> Html {
                 <ol>
                     <li>
                         <Link<AppRoute> to={AppRoute::Home}>
-                            { "Home" }
+                            {"Home"}
                         </Link<AppRoute>>
                     </li>
                     <li>
                         <Link<AppRoute> to={AppRoute::Resume}>
-                            { "Resume" }
+                            {"Resume"}
                         </Link<AppRoute>>
                     </li>
                     <li>
                         <Link<AppRoute> to={AppRoute::Projects}>
-                            { "Projects" }
+                            {"Projects"}
                         </Link<AppRoute>>
                     </li>
                 </ol>

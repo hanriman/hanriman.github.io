@@ -33,7 +33,7 @@ impl Default for ThemeState {
                             "light"
                         }
                     }
-                    _ => "light",
+                    _ => "dark",
                 }
             }
         };
@@ -41,7 +41,7 @@ impl Default for ThemeState {
         match ls_theme {
             "light" => Self { current: "light" },
             "dark" => Self { current: "dark" },
-            _ => Self { current: "light" },
+            _ => Self { current: "dark" },
         }
     }
 }
@@ -51,8 +51,8 @@ impl Reducible for ThemeState {
 
     fn reduce(self: Rc<Self>, action: Self::Action) -> Rc<Self> {
         let next_theme = match action {
-            ThemeAction::Light => "light",
             ThemeAction::Dark => "dark",
+            ThemeAction::Light => "light",
         };
 
         Self {
