@@ -104,18 +104,6 @@ main {
 .light .site-frame {
   border: 1px solid var(--c-blue);
 }
-.light .home-frame {
-  border: 1px solid var(--c-blue);
-}
-.light .resume-frame {
-  border: 1px solid var(--c-blue);
-}
-.light .projects-frame {
-  border: 1px solid var(--c-blue);
-}
-.light .get-in-touch-frame {
-  border: 1px solid var(--c-blue);
-}
 .header {
   position: relative;
   margin-top: 13px;
@@ -163,6 +151,18 @@ span.c2 {
   margin-left: 8px;
   margin-right: 8px;
   border: 1px solid var(--c-white);
+}
+.light .home-frame {
+  border: 1px solid var(--c-blue);
+}
+.light .resume-frame {
+  border: 1px solid var(--c-blue);
+}
+.light .projects-frame {
+  border: 1px solid var(--c-blue);
+}
+.light .get-in-touch-frame {
+  border: 1px solid var(--c-blue);
 }
 .content-frame {
   position: relative;
@@ -218,7 +218,6 @@ span.c2 {
 .get-in-touch-nav {
   position: relative;
   margin: 8px;
-  white-space: nowarap;
   pointer-events: auto;
 }
 .get-in-touch-nav ol {
@@ -268,7 +267,6 @@ span.c2 {
   text-shadow: var(--c-gold) 2px 0 5px;
 }
 .toggle-text {
-  font-family: "Plus Jakarta Sans", sans-serif;
   transition: all 0.8s;
 }
 .toggle ._theme-1::before {
@@ -337,12 +335,17 @@ span.c2 {
   content: "E";
 }
 
+.blob-container {
+  display: flex;
+  position: relative;
+  height: 377px;
+  justify-content: center;
+  align-items: center;
+}
 .blob {
   position: relative;
-  top: 144px;
-  left: 233px;
-  width: 233px;
-  height: 233px;
+  width: 144px;
+  height: 144px;
   color: var(--c-white);
   display: flex;
   justify-content: center;
@@ -461,6 +464,13 @@ span.c2 {
   }
   .get-in-touch-nav ol {
     row-gap: 21px;
+  }
+  .blob-container {
+    height: 610px;
+  }
+  .blob {
+    width: 233px;
+    height: 233px;
   }
 }
 @media (min-width: 1024px) {

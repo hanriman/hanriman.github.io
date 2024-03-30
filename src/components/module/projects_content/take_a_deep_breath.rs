@@ -8,8 +8,10 @@ pub fn take_a_deep_breath() -> Html {
             <div class="content-frame">
                 <div class="content">
                     <BackProjectButton />
-                    <div class="blob">
-                        {"Take a deep breath"}
+                    <div class="blob-container">
+                        <div class="blob">
+                            {"Take a deep breath"}
+                        </div>
                     </div>
                 </div>
             </div>
