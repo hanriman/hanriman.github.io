@@ -1,12 +1,5 @@
 {
     "errorLens.messageEnabled": false,
-    "rust-analyzer.procMacro.ignored": {
-        "leptos_macro": [
-            // optional:
-            "component",
-            "server"
-        ],
-    },
     "rust-analyzer.cargo.sysroot": "/Users/hanifannurahman/.rustup/toolchains/nightly-x86_64-apple-darwin",
     "rust-analyzer.linkedProjects": [
         "./Cargo.toml"

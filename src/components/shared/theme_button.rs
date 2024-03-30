@@ -14,7 +14,8 @@ pub fn theme_button() -> Html {
             .iter()
             .position(|x: &&str| x == &current_theme)
             .unwrap_or(0);
-        let next_theme: &str = match app_context.theme_cycle.iter().nth(current_theme_index + 1) {
+        let nth_theme = app_context.theme_cycle.get(current_theme_index + 1);
+        let next_theme: &str = match nth_theme {
             Some(nt) => nt,
             None => "light",
         };
@@ -27,8 +28,9 @@ pub fn theme_button() -> Html {
 
     fn handle_theme_icon(app_context: AppContext) -> Html {
         match app_context.theme.current {
-            "dark" => html! {<Dark class={Some("h-[1.5rem] w-[1.5rem] fill-slate-300")} />},
-            "light" | _ => html! {<Light class={Some("h-[1.5rem] w-[1.5rem] fill-orange-400")} />},
+            "dark" => html! {<Dark/>},
+            "light" => html! {<Light/>},
+            _ => html! {<Dark/>},
         }
     }
 

@@ -5,10 +5,10 @@ use yew_router::prelude::Link;
 #[function_component(BackProjectButton)]
 pub fn back_project_button() -> Html {
     html! {
-        <button class="back-button">
-            <Link<AppRoute> to={AppRoute::Projects}>
-                { "< Back" }
-            </Link<AppRoute>>
-        </button>
+        <Link<AppRoute> to={AppRoute::Projects}>
+            <span class="_link">
+                {"< Back"}
+            </span>
+        </Link<AppRoute>>
     }
 }
