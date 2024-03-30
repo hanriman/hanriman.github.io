@@ -1,4 +1,7 @@
-# Hanifanrn Personal Website
+<div align="center">
+    <h1>Hanifanrn Website</h1>
+    <a href="https://hanfianrn.com/" target="_blank"><img src="assets/favicon/favicon.ico" width="150" /></a>
+</div>
 
 ## About
 This repository is the source code of https://hanifanrn.com website. the code is written in rust using Yew and compiled to Webassembly.
