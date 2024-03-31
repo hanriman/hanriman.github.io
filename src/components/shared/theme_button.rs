@@ -14,39 +14,42 @@ pub fn theme_button() -> Html {
             .iter()
             .position(|x: &&str| x == &current_theme)
             .unwrap_or(0);
-        let next_theme: &str = match app_context.theme_cycle.iter().nth(current_theme_index + 1) {
+        let nth_theme = app_context.theme_cycle.get(current_theme_index + 1);
+        let next_theme: &str = match nth_theme {
             Some(nt) => nt,
             None => "light",
         };
+
         Callback::from(move |_| match next_theme {
-            "light" => app_context.theme.dispatch(ThemeAction::Light),
             "dark" => app_context.theme.dispatch(ThemeAction::Dark),
-            _ => app_context.theme.dispatch(ThemeAction::Light),
+            "light" => app_context.theme.dispatch(ThemeAction::Light),
+            _ => app_context.theme.dispatch(ThemeAction::Dark),
         })
     };
 
     fn handle_theme_icon(app_context: AppContext) -> Html {
         match app_context.theme.current {
-            "dark" => html! {<Dark class={Some("h-[1.5rem] w-[1.5rem] fill-slate-300")} />},
-            "light" | _ => html! {<Light class={Some("h-[1.5rem] w-[1.5rem] fill-orange-400")} />},
+            "dark" => html! {<Dark/>},
+            "light" => html! {<Light/>},
+            _ => html! {<Dark/>},
         }
     }
 
     html! {
-            <div role="button" aria-lable="dark or light theme button" class="toggle" onclick={ cycle_theme }>
-                <div aria-hidden="true" class="toggle-text">
-                    { handle_theme_icon(app_context.clone()) }
-                    <div class="_theme-1"></div>
-                    <div class="_theme-2"></div>
-                    <div class="_theme-3"></div>
-                    <div class="_theme-4"></div>
-                    <div class="_theme-5"></div>
-                    <div class="_theme-6"></div>
-                    <div class="_theme-7"></div>
-                    <div class="_theme-8"></div>
-                    <div class="_theme-9"></div>
-                    <div class="_theme-10"></div>
-                </div>
+        <div role="button" aria-lable="dark or light theme button" class="toggle" onclick={ cycle_theme }>
+            <div aria-hidden="true" class="toggle-text">
+                { handle_theme_icon(app_context.clone()) }
+                <div class="_theme-1"></div>
+                <div class="_theme-2"></div>
+                <div class="_theme-3"></div>
+                <div class="_theme-4"></div>
+                <div class="_theme-5"></div>
+                <div class="_theme-6"></div>
+                <div class="_theme-7"></div>
+                <div class="_theme-8"></div>
+                <div class="_theme-9"></div>
+                <div class="_theme-10"></div>
             </div>
+        </div>
     }
 }
