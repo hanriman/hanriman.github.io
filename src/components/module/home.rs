@@ -19,7 +19,7 @@ pub fn home() -> Html {
                     <br/>
                     <p>
                         {"In my free time you'll find me grinding my programming skills at
-                        Leetcode, or write some blogs article to add some internet
+                        Leetcode, or write articles to add some internet
                         footprint in this vast and crowded world."}
                     </p>
                     <br/>
