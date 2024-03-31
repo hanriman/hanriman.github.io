@@ -47,7 +47,6 @@ pub fn projects() -> Html {
                                     </p>
                                 </div>
                             </li>
-
                             <li>
                                 <div class="publication">
                                     <a
@@ -65,6 +64,33 @@ pub fn projects() -> Html {
                                         {"HR Nurahman, A Bachrudin, B Tantular"}
                                     </p>
                                 </div>
+                            </li>
+                        </ol>
+                    </section>
+                    <section class="featured-on">
+                        <h2>{"Featured on"}</h2>
+                        <ol>
+                            <li>
+                                <span>{"Feb 2024 | "}</span>
+                                <a
+                                    class="link-new-tab"
+                                    href="https://blog.bangkit.academy/2024/02/the-survival-drive-can-always-be-best.html"
+                                    target="_blank"
+                                    >
+                                    {"Bangkit Academy Blog "}
+                                    <NewTabSVG />
+                                </a>
+                            </li>
+                            <li>
+                                <span>{"Feb 2024 | "}</span>
+                                <a
+                                    class="link-new-tab"
+                                    href="https://www.instagram.com/p/C3o9yqByUGd/?img_index=1"
+                                    target="_blank"
+                                    >
+                                    {"Google Indonesia Instagram "}
+                                    <NewTabSVG />
+                                </a>
                             </li>
                         </ol>
                     </section>
