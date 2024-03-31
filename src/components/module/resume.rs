@@ -17,7 +17,7 @@ pub fn resume() -> Html {
                         Currenly working as Lead Data and AI Services at IBM-JTI. I have 
                         worked on Data Warehouse, Backend Development, DevOps, 
                         Data Governance, and LLM Projects. Beside my main job, I also 
-                        exploring Rust web development, blockchain and software 
+                        exploring Rust for web development and software 
                         development in general."}
                     </p>
                     <br/>

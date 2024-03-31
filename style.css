@@ -208,6 +208,9 @@ span.c2 {
 .publications ol {
   row-gap: 8px;
 }
+.featured-on ol {
+  row-gap: 8px;
+}
 .publication {
   padding-left: 8px;
   border-left: 2px solid var(--c-gold);
