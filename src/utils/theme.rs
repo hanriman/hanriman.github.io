@@ -39,8 +39,8 @@ impl Default for ThemeState {
         };
 
         match ls_theme {
-            "light" => Self { current: "light" },
             "dark" => Self { current: "dark" },
+            "light" => Self { current: "light" },
             _ => Self { current: "dark" },
         }
     }

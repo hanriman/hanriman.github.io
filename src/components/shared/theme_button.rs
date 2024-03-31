@@ -19,10 +19,11 @@ pub fn theme_button() -> Html {
             Some(nt) => nt,
             None => "light",
         };
+
         Callback::from(move |_| match next_theme {
-            "light" => app_context.theme.dispatch(ThemeAction::Light),
             "dark" => app_context.theme.dispatch(ThemeAction::Dark),
-            _ => app_context.theme.dispatch(ThemeAction::Light),
+            "light" => app_context.theme.dispatch(ThemeAction::Light),
+            _ => app_context.theme.dispatch(ThemeAction::Dark),
         })
     };
 
@@ -35,20 +36,20 @@ pub fn theme_button() -> Html {
     }
 
     html! {
-            <div role="button" aria-lable="dark or light theme button" class="toggle" onclick={ cycle_theme }>
-                <div aria-hidden="true" class="toggle-text">
-                    { handle_theme_icon(app_context.clone()) }
-                    <div class="_theme-1"></div>
-                    <div class="_theme-2"></div>
-                    <div class="_theme-3"></div>
-                    <div class="_theme-4"></div>
-                    <div class="_theme-5"></div>
-                    <div class="_theme-6"></div>
-                    <div class="_theme-7"></div>
-                    <div class="_theme-8"></div>
-                    <div class="_theme-9"></div>
-                    <div class="_theme-10"></div>
-                </div>
+        <div role="button" aria-lable="dark or light theme button" class="toggle" onclick={ cycle_theme }>
+            <div aria-hidden="true" class="toggle-text">
+                { handle_theme_icon(app_context.clone()) }
+                <div class="_theme-1"></div>
+                <div class="_theme-2"></div>
+                <div class="_theme-3"></div>
+                <div class="_theme-4"></div>
+                <div class="_theme-5"></div>
+                <div class="_theme-6"></div>
+                <div class="_theme-7"></div>
+                <div class="_theme-8"></div>
+                <div class="_theme-9"></div>
+                <div class="_theme-10"></div>
             </div>
+        </div>
     }
 }

@@ -5,12 +5,11 @@ use yew_router::prelude::Link;
 #[function_component(Header)]
 pub fn header() -> Html {
     html! {
-        // header-->
         <header class="header">
             <h1>
-                <span class="c2">{ "Hanifan " }</span> <span class="c1">{ "Rizki Nurahman" }</span>
+                <span class="c2">{"Hanifan "}</span> <span class="c1">{"Rizki Nurahman"}</span>
             </h1>
-            <p class="header-label">{ "Software Engineer" }</p>
+            <p class="header-label">{"Software Engineer"}</p>
             <nav class="header-nav" aria-label="site menu">
                 <ol>
                     <li>

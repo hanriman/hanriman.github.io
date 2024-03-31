@@ -2,8 +2,8 @@ use crate::components::shared::back_project_button::BackProjectButton;
 use crate::components::shared::svg::new_tab_svg::NewTabSVG;
 use yew::{function_component, html, Html};
 
-#[function_component(PersonalWebsite)]
-pub fn personal_website() -> Html {
+#[function_component(PersonalWebsiteWithRust)]
+pub fn personal_website_with_rust() -> Html {
     html! {
         <div class="frame projects-frame">
             <div class="content-frame">
@@ -14,10 +14,11 @@ pub fn personal_website() -> Html {
                         <br />
                         <h3>{"Code Repository [ "}
                             <a
-                                class="_link-new-tab"
+                                class="link-new-tab"
                                 href="https://github.com/hanifanrn/hanifanrn.github.io"
                                 target="_blank"
-                                >{ "link " }
+                                >
+                                {"link "}
                                 <NewTabSVG />
                             </a>
                             <span>{"]."}</span>
@@ -63,25 +64,47 @@ pub fn personal_website() -> Html {
                             for static website that get deployed on github pages because I still 
                             don’t know how to use Rust and after around a year of learning and 
                             exploring Rust frontend framework and webassembly I decided to rewrite 
-                            my website using Leptos. Just to find out that Leptos still not yet support 
-                            Hash Router for static website in Mar 2024. I need hash router so that the 
+                            my website using Leptos."} 
+                        </p>
+                        <div class="image-container">
+                            <img
+                                src="./assets/personal_website_with_rust/rewrite_to_rust_meme.jpeg"
+                                alt="why should not I rewrite it to rust meme"
+                                class="rewrite-to-rust-meme"
+                            />
+                        </div>
+                        <p>
+                            {"Just to find out that Leptos still not yet support
+                            Hash Router for static website in Mar 2024 "}
+                            <span>{"[ "}</span>
+                            <a
+                                class="link-new-tab"
+                                href="https://github.com/leptos-rs/leptos/issues/2184"
+                                target="_blank"
+                                >
+                                {"link "}
+                                <NewTabSVG />
+                            </a>
+                            <span>{"]"}</span>
+                            {". I need hash router so that the
                             website won't return 404 when the pages refreshed or accessed directly to a 
                             specific route besides its base route. More detail about the problem in 
                             Stack Overflow that also happen with React "}
                             <span>{"[ "}</span>
                             <a
-                                class="_link-new-tab"
+                                class="link-new-tab"
                                 href="https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages"
                                 target="_blank"
-                                >{ "link " }
+                                >
+                                {"link "}
                                 <NewTabSVG />
                             </a>
                             <span>{"]."}</span>
                         </p>
                         <br />
                         <p>
-                            {"So after do more research I rewrite my website again using Yew
-                            because yew-router has the hash router functionality and works fine with 
+                            {"So after doing some more research I rewrite my website again using Yew
+                            because yew-router already support hash router functionality and works fine with 
                             github pages. Finally after years of learning, designing, and debugging
                             I can feel "} 
                             <strong>{"satisfied"}</strong>
@@ -91,21 +114,16 @@ pub fn personal_website() -> Html {
                         <h3>{"Errata Policy"}</h3>
                         <p>
                             {"I am trying my best to make this website as error-free as possible.
-                            If you find any errors, please let me know by one of the following ways:"}
-                        </p>
-                        <p>
-                            {"- Open an issue on GitHub [ "}
+                            If you find any errors, please let me know by open an issue on GitHub [ "}
                             <a
-                                class="_link-new-tab"
+                                class="link-new-tab"
                                 href="https://github.com/hanifanrn/hanifanrn.github.io/issues"
                                 target="_blank"
-                                >{ "link " }
+                                >
+                                {"link "}
                                 <NewTabSVG />
                             </a>
                             <span>{"]."}</span>
-                        </p>
-                        <p>
-                            {"- Send me an email at hanifanrizki@gmail.com"}
                         </p>
                     </div>
                 </div>

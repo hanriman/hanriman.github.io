@@ -16,31 +16,41 @@ pub fn resume() -> Html {
                         {"I am a Statistics graduate from the Padjadjaran University.
                         Currenly working as Lead Data and AI Services at IBM-JTI. I have 
                         worked on Data Warehouse, Backend Development, DevOps, 
-                        Data Governance, and LLM Projects."}
-                    </p>
-                    <p>
-                        {"Beside my main job, I also exploring Rust web development, blockchain
-                        and software development in general."}
+                        Data Governance, and LLM Projects. Beside my main job, I also 
+                        exploring Rust web development, blockchain and software 
+                        development in general."}
                     </p>
                     <br/>
                     <h2>
                         {"Primary Toolkits"}
                     </h2>
-                    <p>
-                        {"- Programming Language: Rust, Python"}
-                    </p>
-                    <p>
-                        {"- Data Analytics: Pandas, Numpy, Scikit-learn, Tensorflow"}
-                    </p>
-                    <p>
-                        {"- Web Dev: Axum, Yew, HTML5, CSS3"}
-                    </p>
-                    <p>
-                        {"- Databases: PostgreSQL, MongoDB, CloudantDB, ELK"}
-                    </p>
-                    <p>
-                        {"- Development Tools: Git, Docker, OKD/K8s, IBM Cloud"}
-                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                {"- Programming Language: Rust, Python"}
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                {"- Data Analytics: Pandas, Numpy, Scikit-learn, Tensorflow"}
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                {"- Web Dev: Axum, Yew, HTML5, CSS3"}
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                {"- Databases: PostgreSQL, MongoDB, CloudantDB, ELK"}
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                {"- Development Tools: Git, Docker, OKD/K8s, IBM Cloud"}
+                            </p>
+                        </li>
+                    </ol>
                     <br />
                     <h2>
                         {"Currently Reading"}
@@ -50,16 +60,19 @@ pub fn resume() -> Html {
                     </p>
                     <br/>
                     <h2>
-                        {"Download Resume [ "}
-                        <a
-                            class="_link-new-tab"
-                            href="https://drive.google.com/file/d/1cFOMYojhK7rQpwDqr0TukBozEJ9jiIth/view?usp=sharing"
-                            target="_blank"
-                            aria-lable="download resume"
-                            >{ "link " }
-                            <NewTabSVG />
+                        {"Download Resume "}
+                        <span>
+                            {"[ "}
+                            <a
+                                class="link-new-tab"
+                                href="https://drive.google.com/file/d/1cFOMYojhK7rQpwDqr0TukBozEJ9jiIth/view?usp=sharing"
+                                target="_blank"
+                                >
+                                {"link "}
+                                <NewTabSVG />
                             </a>
-                        <span>{"]"}</span>
+                            {"]"}
+                        </span>
                     </h2>
                     <blockquote>
                         <i>

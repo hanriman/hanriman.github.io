@@ -33,6 +33,11 @@ h3 {
 h2 span {
   font-size: 13px;
 }
+.image-container {
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+}
 a {
   color: var(--c-white);
   text-decoration: none;
@@ -44,6 +49,9 @@ a {
 ol,
 ul {
   list-style: none;
+}
+section {
+  margin-bottom: 34px;
 }
 blockquote {
   border-left: 2px solid var(--c-gold);
@@ -66,25 +74,25 @@ main {
   font-size: 13px;
   transition: all 0.8s;
 }
-._link {
+.link {
   text-decoration: underline;
 }
-._link:hover {
+.link:hover {
   color: var(--c-gold);
   border: 0.5px solid var(--c-gold);
 }
-.light ._link:hover {
+.light .link:hover {
   color: var(--c-black);
   border: 0.5px solid var(--c-black);
 }
-._link-new-tab {
+.link-new-tab {
   text-decoration: underline;
 }
-._link-new-tab:hover {
+.link-new-tab:hover {
   color: var(--c-gold);
   text-shadow: var(--c-gold) 1px 0 5px;
 }
-.light ._link-new-tab:hover {
+.light .link-new-tab:hover {
   color: var(--c-black);
   text-shadow: var(--c-black) 1px 0 13px;
 }
@@ -193,6 +201,11 @@ span.c2 {
 .content ol {
   display: flex;
   flex-direction: column;
+}
+.featured-projects ol {
+  row-gap: 8px;
+}
+.publications ol {
   row-gap: 8px;
 }
 .publication {
@@ -215,30 +228,24 @@ span.c2 {
 .get-in-touch-frame {
   border: 1px solid var(--c-white);
 }
-.get-in-touch-nav {
+.get-in-touch-container {
   position: relative;
   margin: 8px;
   pointer-events: auto;
 }
-.get-in-touch-nav ol {
+.get-in-touch-container ol {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
 }
-.get-in-touch-nav ol li ._text {
+.get-in-touch-container ol li ._text {
   transition: all 0.8s;
 }
-.get-in-touch-nav ol li ._text::before {
-  left: -5px;
-  top: -5px;
-  width: calc(100% + 10px);
-  height: calc(100% + 10px);
-}
-.get-in-touch-nav ol li ._text:hover {
+.get-in-touch-container ol li ._text:hover {
   color: var(--c-gold);
   text-shadow: var(--c-gold) 1px 0 5px;
 }
-.light .get-in-touch-nav ol li ._text:hover {
+.light .get-in-touch-container ol li ._text:hover {
   color: var(--c-black);
   text-shadow: var(--c-black) 1px 0 13px;
 }
@@ -335,6 +342,10 @@ span.c2 {
   content: "E";
 }
 
+img.rewrite-to-rust-meme {
+  height: 233px;
+  width: auto;
+}
 .blob-container {
   display: flex;
   position: relative;
@@ -427,7 +438,7 @@ span.c2 {
     width: 311px;
     border: 1px solid var(--c-white);
   }
-  .get-in-touch-nav ol {
+  .get-in-touch-container ol {
     row-gap: 13px;
   }
   .toggle {
@@ -462,7 +473,7 @@ span.c2 {
   .footer {
     font-size: 17px;
   }
-  .get-in-touch-nav ol {
+  .get-in-touch-container ol {
     row-gap: 21px;
   }
   .blob-container {
@@ -475,7 +486,7 @@ span.c2 {
 }
 @media (min-width: 1024px) {
   .header-label {
-    margin-top: 13px;
+    margin-top: 5px;
   }
   .header-nav {
     margin-top: 34px;
