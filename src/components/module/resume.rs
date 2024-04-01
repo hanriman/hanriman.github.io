@@ -13,10 +13,10 @@ pub fn resume() -> Html {
                         {"About"}
                     </h2>
                     <p>
-                        {"I am a Statistics graduate from the Padjadjaran University.
-                        Currenly working as Lead Data and AI Services at IBM-JTI. I have 
+                        {"I am a Statistics graduate from Padjadjaran University.
+                        Currently working as Lead Data and AI Services at IBM-JTI. I have 
                         worked on Data Warehouse, Backend Development, DevOps, 
-                        Data Governance, and LLM Projects. Beside my main job, I also 
+                        Data Governance, and LLM Projects. Besides my main job, I also 
                         exploring Rust for web development and software 
                         development in general."}
                     </p>
