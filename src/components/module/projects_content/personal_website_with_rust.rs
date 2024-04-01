@@ -27,7 +27,7 @@ pub fn personal_website_with_rust() -> Html {
                         <p>
                             {"I love something "}
                             <strong>{"sophisticated"}</strong>
-                            {", something that mindfully crafted with a well-thought-out design.
+                            {", something that is mindfully crafted with a well-thought-out design.
                             But when I reflect on some of personal projects that I have done in the past
                             few years, I feel that my works are not "} 
                             <i>{"sophisticated enough"}</i>
@@ -50,19 +50,19 @@ pub fn personal_website_with_rust() -> Html {
                         </blockquote>
                         <br />
                         <p>
-                            {"The motivation is set up, and the next thing are doing some research on
+                            {"The motivation is set up, and the next thing is doing some research on
                             how the website should be designed. I don't want my website to be "}
                             <strong>{"centrally"}</strong>
-                            {" oriented. To avoid that, inspired by nature, I use Golden Ratio and
-                            Fibonacci number as my padding, margin, font size and even the RGB color number. 
-                            So that even if the contents placement are not centrally oriented,
+                            {" oriented. To avoid that, inspired by nature, I use the Golden Ratio and
+                            Fibonacci numbers as my padding, margin, font size and even the RGB color number. 
+                            So that even if the placement of the content are not centrally oriented,
                             the overall contents placement still has structure."}
                         </p>
                         <br />
                         <p>
                             {"As for the tech stack, previously in 2023 I only use html, css and js
-                            for static website that get deployed on github pages because I still 
-                            don’t know how to use Rust and after around a year of learning and 
+                            for a static website that got deployed on github pages because I still 
+                            didn’t know how to use Rust and after around a year of learning and 
                             exploring Rust frontend framework and webassembly I decided to rewrite 
                             my website using Leptos."} 
                         </p>
@@ -74,7 +74,7 @@ pub fn personal_website_with_rust() -> Html {
                             />
                         </div>
                         <p>
-                            {"Just to find out that Leptos still not yet support
+                            {"Just to find out that Leptos still does not yet support
                             Hash Router for static website in Mar 2024 "}
                             <span>{"[ "}</span>
                             <a
@@ -87,9 +87,9 @@ pub fn personal_website_with_rust() -> Html {
                             </a>
                             <span>{"]"}</span>
                             {". I need hash router so that the
-                            website won't return 404 when the pages refreshed or accessed directly to a 
+                            website won't return 404 when the pages are refreshed or accessed directly to a 
                             specific route besides its base route. More detail about the problem in 
-                            Stack Overflow that also happen with React "}
+                            Stack Overflow that also happens with React "}
                             <span>{"[ "}</span>
                             <a
                                 class="link-new-tab"
@@ -103,9 +103,9 @@ pub fn personal_website_with_rust() -> Html {
                         </p>
                         <br />
                         <p>
-                            {"So after doing some more research I rewrite my website again using Yew
-                            because yew-router already support hash router functionality and works fine with 
-                            github pages. Finally after years of learning, designing, and debugging
+                            {"So after doing some more research, I rewrote my website again using Yew
+                            because yew-router already supports hash router functionality and works fine with 
+                            github pages. Finally, after years of learning, designing, and debugging
                             I can feel "} 
                             <strong>{"satisfied"}</strong>
                             {" with this project."}
@@ -114,7 +114,7 @@ pub fn personal_website_with_rust() -> Html {
                         <h3>{"Errata Policy"}</h3>
                         <p>
                             {"I am trying my best to make this website as error-free as possible.
-                            If you find any errors, please let me know by open an issue on GitHub [ "}
+                            If you find any errors, please let me know by opening an issue on GitHub [ "}
                             <a
                                 class="link-new-tab"
                                 href="https://github.com/hanifanrn/hanifanrn.github.io/issues"
