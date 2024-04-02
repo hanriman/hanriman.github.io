@@ -67,6 +67,7 @@ pub fn resume() -> Html {
                                 class="link-new-tab"
                                 href="https://drive.google.com/file/d/1cFOMYojhK7rQpwDqr0TukBozEJ9jiIth/view?usp=sharing"
                                 target="_blank"
+                                aria-label="download resume"
                                 >
                                 {"link "}
                                 <NewTabSVG />
