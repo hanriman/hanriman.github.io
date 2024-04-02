@@ -17,6 +17,7 @@ pub fn personal_website_with_rust() -> Html {
                                 class="link-new-tab"
                                 href="https://github.com/hanifanrn/hanifanrn.github.io"
                                 target="_blank"
+                                aria-label="github code repository"
                                 >
                                 {"link "}
                                 <NewTabSVG />
@@ -81,6 +82,7 @@ pub fn personal_website_with_rust() -> Html {
                                 class="link-new-tab"
                                 href="https://github.com/leptos-rs/leptos/issues/2184"
                                 target="_blank"
+                                aria-label="leptos hash route issue github repository"
                                 >
                                 {"link "}
                                 <NewTabSVG />
@@ -95,6 +97,7 @@ pub fn personal_website_with_rust() -> Html {
                                 class="link-new-tab"
                                 href="https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages"
                                 target="_blank"
+                                aria-label="react hash route issue at stack overflow"
                                 >
                                 {"link "}
                                 <NewTabSVG />
@@ -119,6 +122,7 @@ pub fn personal_website_with_rust() -> Html {
                                 class="link-new-tab"
                                 href="https://github.com/hanifanrn/hanifanrn.github.io/issues"
                                 target="_blank"
+                                aria-label="open issue at github respository"
                                 >
                                 {"link "}
                                 <NewTabSVG />

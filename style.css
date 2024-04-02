@@ -43,6 +43,9 @@ a {
   text-decoration: none;
   transition: all 0.8s;
 }
+button {
+  border: none;
+}
 .light a {
   color: var(--c-blue);
 }
