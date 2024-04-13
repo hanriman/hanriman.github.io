@@ -59,7 +59,13 @@ pub fn personal_website_with_rust() -> Html {
                             So that even if the placement of the content are not centrally oriented,
                             the overall contents placement still has structure."}
                         </p>
-                        <br />
+                        <div class="image-container">
+                            <img
+                                src="./assets/personal_website_with_rust/design_process.jpeg"
+                                alt="hanifanrn website design process"
+                                class="design-process"
+                            />
+                        </div>
                         <p>
                             {"As for the tech stack, previously in 2023 I only use html, css and js
                             for a static website that got deployed on github pages because I still 

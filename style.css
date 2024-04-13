@@ -349,9 +349,15 @@ span.c2 {
 }
 
 img.rewrite-to-rust-meme {
-  height: 233px;
-  width: auto;
+  width: 233px;
+  height: auto;
 }
+
+img.design-process {
+  width: 233px;
+  height: auto;
+}
+
 .blob-container {
   display: flex;
   position: relative;
@@ -450,6 +456,10 @@ img.rewrite-to-rust-meme {
   .toggle {
     padding: 4px;
   }
+  img.design-process {
+    width: 317px;
+    height: auto;
+  }
 }
 @media (min-width: 769px) {
   .header {
@@ -489,8 +499,16 @@ img.rewrite-to-rust-meme {
     width: 233px;
     height: 233px;
   }
+  img.design-process {
+    width: 610px;
+    height: auto;
+  }
+  img.rewrite-to-rust-meme {
+    width: 377px;
+    height: auto;
+  }
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 500px) {
   .header-label {
     margin-top: 5px;
   }
@@ -535,10 +553,18 @@ img.rewrite-to-rust-meme {
     margin: 0px;
     pointer-events: none;
   }
+  img.design-process {
+    width: 377px;
+    height: auto;
+  }
 }
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-height: 500px) {
   .projects-frame {
     top: 13px;
     width: 832px;
+  }
+  img.design-process {
+    width: 610px;
+    height: auto;
   }
 }
