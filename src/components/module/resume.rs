@@ -13,8 +13,7 @@ pub fn resume() -> Html {
                         {"About"}
                     </h2>
                     <p>
-                        {"I am a Statistics graduate from Padjadjaran University.
-                        Currently working as Lead Data and AI Services at IBM-JTI. I have 
+                        {"Currently working as Data Specialist at IBM. I have
                         worked on Data Warehouse, Backend Development, DevOps, 
                         Data Governance, and LLM Projects. Besides my main job, I also 
                         exploring Rust for web development and software 
@@ -42,7 +41,7 @@ pub fn resume() -> Html {
                         </li>
                         <li>
                             <p>
-                                {"- Databases: PostgreSQL, MongoDB, PgVector, ELK"}
+                                {"- Databases: PostgreSQL, MongoDB, Pgvector, ELK"}
                             </p>
                         </li>
                         <li>
