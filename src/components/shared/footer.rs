@@ -46,10 +46,10 @@ pub fn footer() -> Html {
                         <li>
                             <a
                                 class="_text"
-                                href="https://www.youtube.com/@hanifanrn"
+                                href="https://medium.com/@hanifanrn"
                                 target="_blank"
                                 >
-                                {"Youtube "}
+                                {"Medium "}
                                 <NewTabSVG />
                             </a>
                         </li>
