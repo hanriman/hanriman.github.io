@@ -27,7 +27,7 @@ pub fn resume() -> Html {
                     <ol>
                         <li>
                             <p>
-                                {"- Programming Language: Rust, Python"}
+                                {"- Programming Language: Rust, Python, Golang"}
                             </p>
                         </li>
                         <li>
@@ -42,7 +42,7 @@ pub fn resume() -> Html {
                         </li>
                         <li>
                             <p>
-                                {"- Databases: PostgreSQL, MongoDB, CloudantDB, ELK"}
+                                {"- Databases: PostgreSQL, MongoDB, PgVector, ELK"}
                             </p>
                         </li>
                         <li>
@@ -65,7 +65,7 @@ pub fn resume() -> Html {
                             {"[ "}
                             <a
                                 class="link-new-tab"
-                                href="https://drive.google.com/file/d/1cFOMYojhK7rQpwDqr0TukBozEJ9jiIth/view?usp=sharing"
+                                href="./assets/resume/hanifan-resume.pdf"
                                 target="_blank"
                                 aria-label="download resume"
                                 >
@@ -77,7 +77,7 @@ pub fn resume() -> Html {
                     </h2>
                     <blockquote>
                         <i>
-                            {"Updated on 29 Mar 2024"}
+                            {"Updated on 04 Jun 2024"}
                         </i>
                     </blockquote>
                     <br/>
