@@ -20,7 +20,7 @@ h1 {
 }
 h2 {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
 }
 h2.title {
   padding-top: 8px;
@@ -28,10 +28,13 @@ h2.title {
 }
 h3 {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 300;
 }
 h2 span {
   font-size: 13px;
+}
+p {
+  font-weight: 300;
 }
 .image-container {
   margin: 8px;
@@ -39,6 +42,7 @@ h2 span {
   justify-content: center;
 }
 a {
+  font-weight: 300;
   color: var(--c-white);
   text-decoration: none;
   transition: all 0.8s;
@@ -470,15 +474,12 @@ img.design-process {
   }
   h1 {
     font-size: 34px;
-    font-weight: 200;
   }
   h2 {
     font-size: 21px;
-    font-weight: 200;
   }
   h3 {
     font-size: 17px;
-    font-weight: 200;
   }
   h2 span {
     font-size: 17px;
