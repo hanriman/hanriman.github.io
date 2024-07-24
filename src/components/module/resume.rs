@@ -13,7 +13,7 @@ pub fn resume() -> Html {
                         {"About"}
                     </h2>
                     <p>
-                        {"Currently working as Data Specialist at IBM. I have
+                        {"Currently working as Application Developer - Data & AI at IBM. I have
                         worked on Data Warehouse, Backend Development, DevOps, 
                         Data Governance, and LLM Projects. Besides my main job, I also 
                         exploring Rust for web development and software 
@@ -55,7 +55,7 @@ pub fn resume() -> Html {
                         {"Currently Reading"}
                     </h2>
                     <p>
-                        {"Software Engineering at Google."}
+                        {"Neural Networks and Deep Learning by Michael Nielsen"}
                     </p>
                     <br/>
                     <h2>
@@ -76,7 +76,7 @@ pub fn resume() -> Html {
                     </h2>
                     <blockquote>
                         <i>
-                            {"Updated on 04 Jun 2024"}
+                            {"Updated on 25 Jul 2024"}
                         </i>
                     </blockquote>
                     <br/>
