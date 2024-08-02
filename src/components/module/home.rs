@@ -11,7 +11,7 @@ pub fn home() -> Html {
                     </h2>
                     <br/>
                     <p>
-                        {"Application Developer - Data & AI at IBM and a Statistics graduate from
+                        {"Application Developer at IBM and a Statistics graduate from
                         Universitas Padjadjaran. My main focus these days is to explore the 
                         possibility of generative AI and Rust web development with Axum and Yew."}
                     </p>
