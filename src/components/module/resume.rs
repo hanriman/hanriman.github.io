@@ -13,7 +13,7 @@ pub fn resume() -> Html {
                         {"About"}
                     </h2>
                     <p>
-                        {"Currently working as Application Developer at IBM specialized in Data & Application.
+                        {"Currently working as Application Developer at IBM specialized in Data & AI.
                         I have worked on Data Warehouse, Backend Development, DevOps, 
                         Data Governance, and LLM Projects. Besides my main job, I also 
                         exploring Rust for web development and software 
