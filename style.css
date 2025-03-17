@@ -334,7 +334,7 @@ span.c2 {
   content: "K";
 }
 .light .toggle ._theme-5::before {
-  content: "S";
+  content: "\00a0";
 }
 .light .toggle ._theme-6::before {
   content: "\00a0";
