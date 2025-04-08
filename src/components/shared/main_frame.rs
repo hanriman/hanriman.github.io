@@ -1,6 +1,6 @@
 use crate::utils::router::{switch, AppRoute};
 use yew::{function_component, html, Html};
-use yew_router::prelude::*;
+use yew_router::{HashRouter, Switch};
 
 /// The root app component
 #[function_component(MainFrame)]

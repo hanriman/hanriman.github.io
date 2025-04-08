@@ -1,5 +1,5 @@
 use crate::components::shared::svg::props::{handle_props_class, Props};
-use yew::prelude::*;
+use yew::{function_component, html, Html};
 
 #[function_component(Dark)]
 pub fn dark(props: &Props) -> Html {
