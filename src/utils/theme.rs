@@ -1,7 +1,7 @@
 use gloo_storage::{errors::StorageError, LocalStorage, Storage};
 use std::rc::Rc;
 use web_sys::{MediaQueryList, Window};
-use yew::prelude::*;
+use yew::{Reducible, UseReducerHandle};
 
 pub enum ThemeAction {
     Light,

@@ -1,6 +1,6 @@
 use crate::components::shared::svg::themes_svg::{Dark, Light};
 use crate::utils::theme::{AppContext, ThemeAction};
-use yew::prelude::*;
+use yew::{function_component, html, use_context, Callback, Html};
 
 #[function_component(ThemeButton)]
 pub fn theme_button() -> Html {
