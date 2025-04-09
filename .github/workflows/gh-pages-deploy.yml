@@ -61,7 +61,7 @@ jobs:
           # token:
 
       - name: Upload artifact
-        id: deployment
+        id: upload
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist dir
