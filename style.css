@@ -119,7 +119,7 @@ main {
 .light .site-frame {
   border: 1px solid var(--c-blue);
 }
-.header {
+header {
   position: relative;
   margin-top: 13px;
   margin-bottom: 13px;
@@ -431,7 +431,7 @@ img.design-process {
     top: var(--pad-vertical);
     bottom: var(--pad-vertical);
   }
-  .header {
+  header {
     margin-top: 13px;
     margin-bottom: 13px;
     margin-left: 21px;
@@ -466,7 +466,7 @@ img.design-process {
   }
 }
 @media (min-width: 769px) {
-  .header {
+  header {
     font-size: 17px;
   }
   .header-nav ol {

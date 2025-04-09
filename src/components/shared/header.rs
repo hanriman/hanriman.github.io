@@ -5,7 +5,7 @@ use yew_router::prelude::Link;
 #[function_component(Header)]
 pub fn header() -> Html {
     html! {
-        <header class="header">
+        <header>
             <h1>
                 <span class="c2">{"Hanifan "}</span> <span class="c1">{"Rizki Nurahman"}</span>
             </h1>
