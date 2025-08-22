@@ -235,6 +235,7 @@ span.email {
   margin-bottom: 5px;
 }
 .get-in-touch-frame {
+  margin-top: 2px;
   border: 1px solid var(--c-white);
 }
 .get-in-touch-container {
