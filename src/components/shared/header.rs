@@ -7,7 +7,7 @@ pub fn header() -> Html {
     html! {
         <header>
             <h1>
-                <span class="c2">{"Hanifan "}</span> <span class="c1">{"Rizki Nurahman"}</span>
+                <span class="c2">{"Hanifan "}</span> <span>{"Rizki Nurahman"}</span>
             </h1>
             <p class="header-label">{"Software Engineer"}</p>
             <nav class="header-nav" aria-label="site menu">

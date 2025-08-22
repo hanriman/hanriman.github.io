@@ -7,7 +7,7 @@ pub fn footer() -> Html {
         <footer class="footer">
             <h2>
                 {"Get in touch | "}
-                <span> { "hanifanrizki@gmail.com" }</span>
+                <span class="email"> { "hanifanrizki@gmail.com" }</span>
             </h2>
 
             <div class="get-in-touch-frame">
@@ -16,7 +16,7 @@ pub fn footer() -> Html {
                         <li>
                             <a
                                 class="_text"
-                                href="https://github.com/hanifanrn"
+                                href="https://github.com/hanriman"
                                 target="_blank"
                                 >
                                 {"Github "}
@@ -26,7 +26,7 @@ pub fn footer() -> Html {
                         <li>
                             <a
                                 class="_text"
-                                href="https://linkedin.com/in/hanifanrn"
+                                href="https://linkedin.com/in/hanriman"
                                 target="_blank"
                                 >
                                 {"Linkedin "}
@@ -36,7 +36,7 @@ pub fn footer() -> Html {
                         <li>
                             <a
                                 class="_text"
-                                href="https://leetcode.com/hanifanrn/"
+                                href="https://leetcode.com/hanriman"
                                 target="_blank"
                                 >
                                 {"Leetcode "}
@@ -46,7 +46,7 @@ pub fn footer() -> Html {
                         <li>
                             <a
                                 class="_text"
-                                href="https://medium.com/@hanifanrn"
+                                href="https://medium.com/@hanriman"
                                 target="_blank"
                                 >
                                 {"Medium "}
@@ -56,7 +56,7 @@ pub fn footer() -> Html {
                         <li>
                             <a
                                 class="_text"
-                                href="https://twitter.com/syntaxmaker"
+                                href="https://twitter.com/hanriman"
                                 target="_blank"
                                 >
                                 {"Twitter "}
