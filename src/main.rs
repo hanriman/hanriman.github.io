@@ -1,4 +1,4 @@
-use hanifanrn_web::app::App;
+use hanriman_website::app::App;
 
 pub fn main() {
     yew::Renderer::<App>::new().render();

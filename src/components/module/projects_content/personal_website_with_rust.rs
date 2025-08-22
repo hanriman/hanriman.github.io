@@ -15,7 +15,7 @@ pub fn personal_website_with_rust() -> Html {
                         <h3>{"Code Repository [ "}
                             <a
                                 class="link-new-tab"
-                                href="https://github.com/hanifanrn/hanifanrn.github.io"
+                                href="https://github.com/hanriman/hanriman.github.io"
                                 target="_blank"
                                 aria-label="github code repository"
                                 >
@@ -62,7 +62,7 @@ pub fn personal_website_with_rust() -> Html {
                         <div class="image-container">
                             <img
                                 src="./assets/personal_website_with_rust/design_process.jpeg"
-                                alt="hanifanrn website design process"
+                                alt="hanriman website design process"
                                 class="design-process"
                             />
                         </div>
@@ -126,7 +126,7 @@ pub fn personal_website_with_rust() -> Html {
                             If you find any errors, please let me know by opening an issue on GitHub [ "}
                             <a
                                 class="link-new-tab"
-                                href="https://github.com/hanifanrn/hanifanrn.github.io/issues"
+                                href="https://github.com/hanriman/hanriman.github.io/issues"
                                 target="_blank"
                                 aria-label="open issue at github respository"
                                 >

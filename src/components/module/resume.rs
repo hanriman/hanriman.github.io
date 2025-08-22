@@ -13,8 +13,9 @@ pub fn resume() -> Html {
                         {"About"}
                     </h2>
                     <p>
-                        {"Currently working as Application Developer at IBM specialized in Data & AI.
-                        I have worked on Data Warehouse, Backend Development, DevOps, 
+                        {"4 years of experience in IT Consulting and Application development
+                        at IBM specialized in Data & AI. I have worked on Data Warehouse, 
+                        Backend Development, DevOps, 
                         Data Governance, and LLM Projects. Besides my main job, I also 
                         exploring Rust for web development and software 
                         development in general."}
@@ -76,7 +77,7 @@ pub fn resume() -> Html {
                     </h2>
                     <blockquote>
                         <i>
-                            {"Updated on 25 Jul 2024"}
+                            {"Updated on 21 August 2025"}
                         </i>
                     </blockquote>
                     <br/>
