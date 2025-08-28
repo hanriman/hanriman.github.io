@@ -29,21 +29,20 @@ pub fn personal_website_with_rust() -> Html {
                             {"I love something "}
                             <strong>{"sophisticated"}</strong>
                             {", something that is mindfully crafted with a well-thought-out design.
-                            But when I reflect on some of personal projects that I have done in the past
-                            few years, I feel that my works are not "} 
+                            However, when I reflect on some of my personal projects from the past few years,
+                            I feel that my works are not  I feel that my works are not "} 
                             <i>{"sophisticated enough"}</i>
-                            {". there is a tendency to just move to a new project before the
-                            current project is ready to be released or else I just 
-                            release it without really thinking about the quality. 
-                            Those sentences contradict each other and the moment I realized
-                            it, it got me thinking:"}
+                            {". There is a tendency to just move to a new project before the current
+                            project is ready to be released, or else I just release it without really 
+                            thinking about the quality. Those sentences contradict each other, and the 
+                            moment I realized it, it got me thinking:"}
                         </p>
                         <br />
                         <blockquote>
                             <i>
                                 {"“I want to create a personal website with a well-thought-out design.
                                 A website that can contain my other projects. Something that 
-                                I can feel "} <strong>{"statisfied"}</strong> {" with.”"}
+                                I can feel "} <strong>{"satisfied"}</strong> {" with.”"}
                             </i>
                             <p>
                                 {"- Hanifan 2023"}
@@ -51,12 +50,12 @@ pub fn personal_website_with_rust() -> Html {
                         </blockquote>
                         <br />
                         <p>
-                            {"The motivation is set up, and the next thing is doing some research on
+                            {"The motivation is set up, and the next thing is to do some research on
                             how the website should be designed. I don't want my website to be "}
                             <strong>{"centrally"}</strong>
                             {" oriented. To avoid that, inspired by nature, I use the Golden Ratio and
-                            Fibonacci numbers as my padding, margin, font size and even the RGB color number. 
-                            So that even if the placement of the content are not centrally oriented,
+                            Fibonacci numbers as my padding, margin, font size, and even the RGB color number. 
+                            So that even if the placement of the contents are not centrally oriented,
                             the overall contents placement still has structure."}
                         </p>
                         <div class="image-container">
@@ -67,10 +66,10 @@ pub fn personal_website_with_rust() -> Html {
                             />
                         </div>
                         <p>
-                            {"As for the tech stack, previously in 2023 I only use html, css and js
-                            for a static website that got deployed on github pages because I still 
-                            didn’t know how to use Rust and after around a year of learning and 
-                            exploring Rust frontend framework and webassembly I decided to rewrite 
+                            {"As for the tech stack, previously in 2023, I only used HTML, CSS and JavaScript
+                            for a static website that got deployed on GitHub Pages because I still 
+                            didn’t know how to use Rust, and after around a year of learning and 
+                            exploring Rust frontend frameworks and webassembly, I decided to rewrite 
                             my website using Leptos."} 
                         </p>
                         <div class="image-container">
@@ -82,7 +81,7 @@ pub fn personal_website_with_rust() -> Html {
                         </div>
                         <p>
                             {"Just to find out that Leptos still does not yet support
-                            Hash Router for static website in Mar 2024 "}
+                            Hash Router for static websites in Mar 2024 "}
                             <span>{"[ "}</span>
                             <a
                                 class="link-new-tab"
@@ -94,9 +93,9 @@ pub fn personal_website_with_rust() -> Html {
                                 <NewTabSVG />
                             </a>
                             <span>{"]"}</span>
-                            {". I need hash router so that the
+                            {". I need a hash router so that the
                             website won't return 404 when the pages are refreshed or accessed directly to a 
-                            specific route besides its base route. More detail about the problem in 
+                            specific route besides its base route. More details about the problem in 
                             Stack Overflow that also happens with React "}
                             <span>{"[ "}</span>
                             <a
@@ -114,7 +113,7 @@ pub fn personal_website_with_rust() -> Html {
                         <p>
                             {"So after doing some more research, I rewrote my website again using Yew
                             because yew-router already supports hash router functionality and works fine with 
-                            github pages. Finally, after years of learning, designing, and debugging
+                            GitHub Pages. Finally, after years of learning, designing, and debugging,
                             I can feel "} 
                             <strong>{"satisfied"}</strong>
                             {" with this project."}
